@@ -1,0 +1,50 @@
+# Requires vars.NAME to be set as a variable.
+name: CI
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+    branches:
+      - main
+      - backport/*.*
+    paths:
+      - config/**
+      - spack.yaml
+  issue_comment:
+    types:
+      - created
+      - edited
+jobs:
+  pr-ci:
+    name: CI
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    uses: access-nri/build-cd/.github/workflows/ci.yml@main
+    with:
+      model: ${{ vars.NAME }}
+      # root-sbd: if different from vars.NAME
+    permissions:
+      pull-requests: write
+      contents: write
+    secrets: inherit
+
+  pr-comment:
+    name: Comment
+    if: github.event_name == 'issue_comment'
+    uses: access-nri/build-cd/.github/workflows/ci-comment.yml@main
+    with:
+      model: ${{ vars.NAME }}
+      # root-sbd: if different from vars.NAME
+    permissions:
+      pull-requests: write
+      contents: write
+
+  pr-closed:
+    name: Closed
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    uses: access-nri/build-cd/.github/workflows/ci-closed.yml@main
+    with:
+      model: ${{ vars.NAME }}
+    secrets: inherit

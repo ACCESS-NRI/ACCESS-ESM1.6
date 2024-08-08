@@ -1,0 +1,60 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  specs:
+    # TODO: Replace the MODEL and VERSION.
+    # The root SBD for the model and overall version of the deployment:
+    # - MODEL@git.VERSION
+  packages:
+    # TODO: Specify versions and variants of dependencies where required
+    # Specification of dependency versions and variants goes here.
+    # CI/CD requires that the first element of the require is only a version:
+    # openmpi:
+    #   require:
+    #     - '@4.0.2'
+
+    # Specifications that apply to all packages
+    all:
+      # TODO: Specify compiler/targets for all packages
+      # compiler: [intel@19.0.5.281]
+      # target: [x86_64]
+  view: true
+  concretizer:
+    unify: true
+  modules:
+    default:
+      enable:
+        - tcl
+      roots:
+        tcl: $spack/../release/modules
+        lmod: $spack/../release/lmod
+      tcl:
+        hash_length: 0
+        include:
+          # Explicitly, which packages are accessible as modules
+          # TODO: Add packages that will be included as modules
+          # - MODEL
+        exclude_implicits: true
+        all:
+          autoload: direct
+          conflict:
+            - '{name}'
+          environment:
+            set:
+              'SPACK_{name}_ROOT': '{prefix}'
+        projections:
+          # TODO: Add explicit projections for modules that will be found with `module load`.
+          # Naming scheme for the above included modules.
+          # These projection versions must be the same as the
+          # `spack.packages.*.require[0]` version but without the `@git.`.
+          # Ex. `require` version `@git.2024.04.21` -> projection `2024.04.21`.
+          all: '{name}/{version}'
+          # MODEL: '{name}/VERSION'
+  # config:
+  #   overridden spack configurations, if needed
+  # mirrors:
+  #   overridden spack package tarball directories, if needed
+  # repos:
+  #   overridden repo sources, if needed
