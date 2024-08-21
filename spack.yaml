@@ -4,7 +4,7 @@
 # configuration settings.
 spack:
   specs:
-    - access-esm1p5@git.2024.05.0
+    - access-esm1p6@git.2024.08.0
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -12,7 +12,7 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
-        - '@git.access-esm1.5_2024.06.20=access-esm1.5'
+        - '@git.dougiesquire/issue388-accessom-gtracer'
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
@@ -58,7 +58,7 @@ spack:
       tcl:
         hash_length: 0
         include:
-          - access-esm1p5
+          - access-esm1p6
           - cice4
           - um7
           - mom5
@@ -72,10 +72,10 @@ spack:
               'SPACK_{name}_ROOT': '{prefix}'
         projections:
           all: '{name}/{version}'
-          access-esm1p5: '{name}/2024.05.0'
+          access-esm1p6: '{name}/2024.08.0'
           cice4: '{name}/2024.05.21'
           um7: '{name}/2024.07.03'
-          mom5: '{name}/access-esm1.5_2024.06.20'
+          mom5: '{name}/dougiesquire/issue388-accessom-gtracer'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
