@@ -12,7 +12,7 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
-        - '@git.dougiesquire/issue388-accessom-gtracer'
+        - '@git.dougiesquire/issue388-accessom-gtracer=access-esm1.6'
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
