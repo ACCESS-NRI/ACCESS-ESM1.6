@@ -24,7 +24,7 @@ jobs:
     uses: access-nri/build-cd/.github/workflows/ci.yml@main
     with:
       model: ${{ vars.NAME }}
-      # root-sbd: if different from vars.NAME
+      root-sbd: access-esm1p6
     permissions:
       pull-requests: write
       contents: write
@@ -36,7 +36,7 @@ jobs:
     uses: access-nri/build-cd/.github/workflows/ci-comment.yml@main
     with:
       model: ${{ vars.NAME }}
-      # root-sbd: if different from vars.NAME
+      root-sbd: access-esm1p6
     permissions:
       pull-requests: write
       contents: write
