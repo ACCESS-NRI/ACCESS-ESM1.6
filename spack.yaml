@@ -84,7 +84,7 @@ spack:
           access-esm1p6: '{name}/2024.08.0'
           cice4: '{name}/2024.05.21'
           um7: '{name}/2024.07.03'
-          mom5: '{name}/2024.08.23'
+          mom5: '{name}/development'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
