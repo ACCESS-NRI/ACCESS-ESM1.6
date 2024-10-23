@@ -67,7 +67,7 @@ spack:
           - mom5
         projections:
           all: '{name}/{version}'
-          access-esm1p6: '{name}/2024.08.0'
+          access-esm1p6: '{name}/2024.10.0'
           cice4: '{name}/2024.05.21'
           um7: '{name}/18-esm15+cable3'
           mom5: '{name}/development'
