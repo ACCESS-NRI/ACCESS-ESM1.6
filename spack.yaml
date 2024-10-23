@@ -18,7 +18,7 @@ spack:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.18-esm15+cable3'
+        - '@git.esm15_cable3'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
