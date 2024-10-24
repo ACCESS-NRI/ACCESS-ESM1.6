@@ -18,7 +18,7 @@ spack:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.esm15_cable3=access-esm1.5'
+        - '@git.esm15_cable3_test=access-esm1.5'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -83,7 +83,7 @@ spack:
           all: '{name}/{version}'
           access-esm1p6: '{name}/2024.10.0'
           cice4: '{name}/2024.05.21'
-          um7: '{name}/esm15_cable3'
+          um7: '{name}/esm15_cable3_test'
           mom5: '{name}/development'
   config:
     install_tree:
