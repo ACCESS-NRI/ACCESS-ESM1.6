@@ -28,11 +28,11 @@ spack:
     default:
       tcl:
         include:
-          # Explicitly, which packages are accessible as modules
           # TODO: Add packages that will be included as modules
-          # - MODEL
+          # - PACKAGE
         projections:
-          # TODO: Add explicit projections for modules that will be found with `module load`.
+          # TODO: Add explicit projections for modules that will be found
+          # with `module load`.
           # Naming scheme for the above included modules.
           # These projection versions must be the same as the
           # `spack.packages.*.require[0]` version but without the `@git.`.
