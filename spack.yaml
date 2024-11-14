@@ -37,7 +37,8 @@ spack:
           # These projection versions must be the same as the
           # `spack.packages.*.require[0]` version but without the `@git.`.
           # Ex. `require` version `@git.2024.04.21` -> projection `2024.04.21`.
-          # MODEL: '{name}/VERSION-{hash:7}'
+          # MODEL: '{name}/VERSION'
+          # COMPONENT: '{name}/VERSION-{hash:7}'
   # config:
   #   overridden spack configurations, if needed
   # mirrors:
