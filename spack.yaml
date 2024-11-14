@@ -18,40 +18,26 @@ spack:
     # Specifications that apply to all packages
     all:
       # TODO: Specify compiler/targets for all packages
-      # compiler: [intel@19.0.5.281]
-      # target: [x86_64]
+      # require:
+      #   - '%intel@19.0.5.281'
+      #   - 'target=x86_64'
   view: true
   concretizer:
     unify: true
   modules:
     default:
-      enable:
-        - tcl
-      roots:
-        tcl: $spack/../release/modules
-        lmod: $spack/../release/lmod
       tcl:
-        hash_length: 0
         include:
           # Explicitly, which packages are accessible as modules
           # TODO: Add packages that will be included as modules
           # - MODEL
-        exclude_implicits: true
-        all:
-          autoload: direct
-          conflict:
-            - '{name}'
-          environment:
-            set:
-              'SPACK_{name}_ROOT': '{prefix}'
         projections:
           # TODO: Add explicit projections for modules that will be found with `module load`.
           # Naming scheme for the above included modules.
           # These projection versions must be the same as the
           # `spack.packages.*.require[0]` version but without the `@git.`.
           # Ex. `require` version `@git.2024.04.21` -> projection `2024.04.21`.
-          all: '{name}/{version}'
-          # MODEL: '{name}/VERSION'
+          # MODEL: '{name}/VERSION-{hash:7}'
   # config:
   #   overridden spack configurations, if needed
   # mirrors:
