@@ -8,6 +8,7 @@ spack:
     # the deployment:
     # TODO: Replace the MODEL and VERSION.
     # - MODEL@git.VERSION
+    - access-esm1p6@git.2024.10.0
 
   packages:
     # Specification of dependency versions and variants. CI/CD requires that
@@ -16,13 +17,44 @@ spack:
     # openmpi:
     #   require:
     #     - '@4.1.5'
+    mom5:
+      require:
+        - '@git.development=access-esm1.6'
+    cice4:
+      require:
+        - '@git.2024.05.21=access-esm1.5'
+    # @d09ee72..bca0757    
+    um7:
+      require:
+        - '@git.18-esm15-cable3=access-esm1.5'
+    # Lower-level ACCESS-NRI dependencies
+    gcom4:
+      require:
+        - '@git.2024.05.28=access-esm1.5'
+    oasis3-mct:
+      require:
+        - '@git.access-esm1.5_2024.05.24=access-esm1.5'
+    # Other dependencies
+    openmpi:
+      require:
+        - '@4.0.2'
+    netcdf-c:
+      require:
+        - '@4.7.4'
+    netcdf-fortran:
+      require:
+        - '@4.5.2'
+    hdf5:
+      require:
+        - '@1.10.11'
+
 
     # Specifications that apply to all packages
     all:
       # TODO: Specify compiler/targets for all packages
-      # require:
-      #   - '%intel@19.0.5.281'
-      #   - 'target=x86_64'
+       require:
+         - '%intel@19.0.5.281'
+         - 'target=x86_64'
   view: true
   concretizer:
     unify: true
@@ -34,6 +66,10 @@ spack:
           # - MODEL
           # - PACKAGE1
           # - PACKAGE2
+          - access-esm1p6
+          - cice4
+          - um7
+          - mom5
         projections:
           # These projection VERSIONs must be the same as the
           # `spack.packages.*.require[0]` VERSION but without the `@git.` and
@@ -54,3 +90,14 @@ spack:
   #   overridden spack package tarball directories, if needed
   # repos:
   #   overridden repo sources, if needed
+          all: '{name}/{version}'
+          access-esm1p6: '{name}/2024.10.0'
+          cice4: '{name}/2024.05.21'
+          um7: '{name}/18-esm15-cable3'
+          mom5: '{name}/development'
+  config:
+    install_tree:
+      root: $spack/../restricted/ukmo/release
+    source_cache: $spack/../restricted/ukmo/source_cache
+    build_stage:
+    - $TMPDIR/restricted/spack-stage
