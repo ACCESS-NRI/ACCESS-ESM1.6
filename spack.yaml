@@ -12,7 +12,8 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
-        - '@git.development=access-esm1.6'
+        - '@git.dev_2024.08.14=access-esm1.6'
+        - '+access-gtracers'
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
@@ -71,7 +72,7 @@ spack:
           access-esm1p6: '{name}/2024.10.0'
           cice4: '{name}/2024.05.21'
           um7: '{name}/18-esm15-cable3'
-          mom5: '{name}/development'
+          mom5: '{name}/dev_2024.08.14'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
