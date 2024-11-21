@@ -4,7 +4,7 @@
 # configuration settings.
 spack:
   specs:
-    - access-esm1p6@git.2024.10.1
+    - access-esm1p6@git.2024.11.1
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
