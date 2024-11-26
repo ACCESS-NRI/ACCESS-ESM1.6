@@ -7,8 +7,8 @@ spack:
     ##from update_cable3
     ## The spack-packages development branch disables variant generic-tracers
     ## by default.
-    #- access-esm1p6@git.2024.10.1
-    - access-esm1p5@git.2024.10.0
+    #- access-esm1p5@git.2024.10.0
+    - access-esm1p6@git.2024.10.1
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
