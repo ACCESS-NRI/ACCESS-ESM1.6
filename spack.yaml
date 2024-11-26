@@ -44,12 +44,12 @@ spack:
     access-fms:
       require:
         - '@development'
-    access-generic-tracers:
-      require:
-        - '@development'
-    access-mocsy:
-      require:
-        - '@mom5'
+    # access-generic-tracers:
+      # require:
+        # - '@development'
+    # access-mocsy:
+      # require:
+        # - '@mom5'
     # Preferences for all packages
     all:
       require:
