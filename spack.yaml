@@ -10,10 +10,9 @@ spack:
     # Note: some packages have branch-specific logic and hence can't use
     # the usual '@git.DATE' calver (https://calver.org) format, instead
     # requiring a `@git.DATE=BRANCH` version.
-    mom5:
-      require:
-        - '@git.dev_2024.08.14=access-esm1.6'
-        - '+access-gtracers'
+mom5:
+   require:
+     - '@git.access-esm1.5_2024.08.23=access-esm1.5'
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
