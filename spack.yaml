@@ -4,6 +4,10 @@
 # configuration settings.
 spack:
   specs:
+    ##from update_cable3
+    ## The spack-packages development branch disables variant generic-tracers
+    ## by default.
+    #- access-esm1p6@git.2024.10.1
     - access-esm1p5@git.2024.10.0
   packages:
     # Direct ACCESS-NRI dependencies
@@ -69,8 +73,8 @@ spack:
         projections:
           all: '{name}/{version}'
           access-esm1p6: '{name}/2024.10.0'
-          cice4: '{name}/2024.05.21'
-          um7: '{name}/18-esm15-cable3'
+          cice4: '{name}/2024.05.21-{hash:7}'
+          um7: '{name}/18-esm15-cable3-{hash:7}'
           mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
   config:
     install_tree:
