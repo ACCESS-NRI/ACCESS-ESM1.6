@@ -2,9 +2,14 @@
 #
 # It describes a set of packages to be installed, along with
 # configuration settings.
+
+# Build with:
+# - UM7 from dev-access-esm1.6 branch
+# - MOM5 from development branch
+# - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.2024.10.0
+    - access-esm1p6@git.dev_2024.12.0
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -19,7 +24,7 @@ spack:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.18-esm15-cable3=access-esm1.5'
+        - '@git.dev-access-esm1.6=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -42,10 +47,10 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.dev_2024.11.0'
+        - '@git.dev_2024.12.0'
     access-generic-tracers:
       require:
-        - '@git.dev_2024.11.0'
+        - '@git.dev_2024.12.0'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -67,9 +72,9 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/2024.10.0'
+          access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/2024.05.21-{hash:7}'
-          um7: '{name}/18-esm15-cable3-{hash:7}'
+          um7: '{name}/dev-access-esm1.6-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
