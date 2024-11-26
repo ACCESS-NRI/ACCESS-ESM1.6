@@ -71,7 +71,7 @@ spack:
           access-esm1p6: '{name}/2024.10.0'
           cice4: '{name}/2024.05.21'
           um7: '{name}/18-esm15-cable3'
-          mom5: '{name}/access-esm1.5_2024.08.23'
+          mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
