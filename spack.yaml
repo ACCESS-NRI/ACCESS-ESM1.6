@@ -18,7 +18,7 @@ spack:
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
-    # @6b6acea..6c4b8af
+    #6c4b8af..6a9acbd
     um7:
       require:
         - '@git.18-esm15-cable3=access-esm1.5'
