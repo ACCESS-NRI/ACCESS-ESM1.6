@@ -23,7 +23,7 @@ spack:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.dev-access-esm1.6=access-esm1.6'
+        - '@git.25-adjust-implicit-met-forcing=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -73,7 +73,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/2024.05.21-{hash:7}'
-          um7: '{name}/dev-access-esm1.6-{hash:7}'
+          um7: '{name}/25-adjust-implicit-met-forcing-{hash:7}'
           mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
   config:
     install_tree:
