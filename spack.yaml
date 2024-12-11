@@ -21,6 +21,7 @@ spack:
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
+    # eea2338
     um7:
       require:
         - '@git.f25-local-ch=access-esm1.6'
