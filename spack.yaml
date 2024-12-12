@@ -5,11 +5,11 @@
 
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
-# - MOM5 from development branch
+# - MOM5 from ESM1.5
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
+    - access-esm1p6@git.dev_2024.12.0 ~generic-tracers
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -17,8 +17,7 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
-        - '@git.dev_2024.08.14=access-esm1.6'
-        - '+access-gtracers'
+        - '@git.access-esm1.5_2024.08.23=access-esm1.5'
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
@@ -75,7 +74,7 @@ spack:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/2024.05.21-{hash:7}'
           um7: '{name}/dev-access-esm1.6-{hash:7}'
-          mom5: '{name}/dev_2024.08.14-{hash:7}'
+          mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
