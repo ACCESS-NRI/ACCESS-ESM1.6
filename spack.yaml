@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
+    - access-esm1p6@git.dev_2024.12.2
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -47,10 +47,11 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.dev_2024.12.0'
+        - '@git.dev_2024.12.1'
+    # Includes wombatlite-sinking
     access-generic-tracers:
       require:
-        - '@git.dev_2024.12.0'
+        - '@git.dev_2024.12.1'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -72,7 +73,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2024.12.0'
+          access-esm1p6: '{name}/dev_2024.12.2'
           cice4: '{name}/2024.05.21-{hash:7}'
           um7: '{name}/dev-access-esm1.6-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
