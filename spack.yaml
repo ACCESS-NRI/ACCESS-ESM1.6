@@ -13,11 +13,11 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.dev_2024.08.14=access-esm1.6'
+        - '@git.update_DaveBi=access-esm1.6'
         - '+access-gtracers'
     cice4:
       require:
-        - '@git.2024.05.21=access-esm1.5'
+        - '@git.update_DaveBi=access-esm1.5'
     um7:
       require:
         - '@git.dev-access-esm1.6=access-esm1.6'
@@ -44,7 +44,7 @@ spack:
         - '@git.dev_2024.12.0'
     access-generic-tracers:
       require:
-        - '@git.dev_2024.12.0'
+        - '@git.wombatlite-sinking'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -67,9 +67,9 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
-          cice4: '{name}/2024.05.21-{hash:7}'
+          cice4: '{name}/update_DaveBi-{hash:7}'
           um7: '{name}/dev-access-esm1.6-{hash:7}'
-          mom5: '{name}/dev_2024.08.14-{hash:7}'
+          mom5: '{name}/update_DaveBi-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
