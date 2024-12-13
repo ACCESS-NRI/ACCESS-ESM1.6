@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
+    - access-esm1p6@git.dev_2024.12.0 cice=5
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -19,9 +19,9 @@ spack:
       require:
         - '@git.dev_2024.08.14=access-esm1.6'
         - '+access-gtracers'
-    cice4:
+    cice5:
       require:
-        - '@git.2024.05.21=access-esm1.5'
+        - '@git.access-esm1.6=access-esm1.6'
     um7:
       require:
         - '@git.dev-access-esm1.6=access-esm1.6'
