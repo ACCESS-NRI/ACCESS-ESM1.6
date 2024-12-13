@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0 cice=5
+    - access-esm1p6@git.dev_2024.12.a cice=5
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -68,12 +68,12 @@ spack:
       tcl:
         include:
           - access-esm1p6
-          - cice4
+          - cice5
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2024.12.0'
-          cice4: '{name}/2024.05.21-{hash:7}'
+          access-esm1p6: '{name}/dev_2024.12.a'
+          cice5: '{name}/access-esm1.6-{hash:7}'
           um7: '{name}/dev-access-esm1.6-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
