@@ -17,7 +17,7 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
-        - '@git.update_DaveBi=access-esm1.6'
+        - '@git.dev_2024.08.14=access-esm1.6'
         - '+access-gtracers'
     cice4:
       require:
@@ -50,7 +50,7 @@ spack:
         - '@git.dev_2024.12.0'
     access-generic-tracers:
       require:
-        - '@git.wombatlite-sinking'
+        - '@git.dev_2024.12.0'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -75,7 +75,7 @@ spack:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
           um7: '{name}/dev-access-esm1.6-{hash:7}'
-          mom5: '{name}/update_DaveBi-{hash:7}'
+          mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
