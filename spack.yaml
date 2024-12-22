@@ -24,7 +24,7 @@ spack:
         - '@git.update_DaveBi=access-esm1.5'
     um7:
       require:
-        - '@git.dev-access-esm1.6=access-esm1.6'
+        - '@git.RevisePastWeek-access-esm1.6=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
