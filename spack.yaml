@@ -22,6 +22,7 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
+    # Root fractions revised by rml
     um7:
       require:
         - '@git.RevisedRootFractions=access-esm1.6'
