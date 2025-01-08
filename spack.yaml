@@ -22,7 +22,7 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # 
+    # snmin=1.0 
     um7:
       require:
         - '@git.snminBug=access-esm1.6'
