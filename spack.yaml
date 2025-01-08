@@ -22,10 +22,10 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # Root fractions revised by rml
+    # 2da3053c674c44cc683bcc4837846d7b44a4cd30
     um7:
       require:
-        - '@git.RevisedRootFractions=access-esm1.6'
+        - '@git.dev-access-esm1.6=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -75,7 +75,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/RevisedRootFractions-{hash:7}'
+          um7: '{name}/dev-access-esm1.6-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
