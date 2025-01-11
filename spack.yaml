@@ -25,7 +25,8 @@ spack:
     # USE snmin directly from runtime_opts mod && snmin = 0.1
     um7:
       require:
-        - '@git.dev-access-esm1.6=access-esm1.6'
+        - '@git.snminBug=access-esm1.6'
+        # - '@git.dev-access-esm1.6=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
