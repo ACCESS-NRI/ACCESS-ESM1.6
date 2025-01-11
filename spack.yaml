@@ -22,7 +22,7 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # USE snmin directly from runtime_opts mod && snmin = 1.0 5f4df5d93f1d3f702a4cfe69290cf6a87996cc61
+    # USE snmin directly from runtime_opts mod && snmin = 1.0 4ed8b49cf4f3cd018bb72eceafeac5f3fcfa2e0d 
     um7:
       require:
         - '@git.snminBug=access-esm1.6'
