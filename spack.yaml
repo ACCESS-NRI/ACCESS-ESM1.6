@@ -22,7 +22,7 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # USE snmin directly from runtime_opts mod && snmin = 1.0 4ed8b49cf4f3cd018bb72eceafeac5f3fcfa2e0d 
+    # 1cd51aa - read params from nml files 
     um7:
       require:
         - '@git.add-user-switches_draft2=access-esm1.6'
