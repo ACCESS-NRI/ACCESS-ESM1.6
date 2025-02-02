@@ -22,7 +22,7 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # 1cd51aa - read params from nml files 
+    # 1cd51aa - read params from nml files redux 
     um7:
       require:
         - '@git.22-land-parameters-in-code=access-esm1.6'
