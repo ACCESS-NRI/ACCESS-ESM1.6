@@ -25,7 +25,7 @@ spack:
     # 1cd51aa - read params from nml files redux 
     um7:
       require:
-        - '@git.dev-access-esm1.6=access-esm1.6'
+        - '@git.test1=access-esm1.6'
         #- '@git.22-land-parameters-in-code=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
@@ -76,7 +76,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/dev-access-esm1.6-{hash:7}'
+          um7: '{name}/test1-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
