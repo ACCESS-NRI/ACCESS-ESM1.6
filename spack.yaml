@@ -22,7 +22,7 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # read params from nml files fix bug # 9ad2fc0..ecc3524
+    # read params from nml files fix bug # 5da9977 
     um7: 
       require:
         #- '@git.dev-access-esm1.6=access-esm1.6'
