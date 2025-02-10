@@ -22,11 +22,12 @@ spack:
     cice4:
       require:
         - '@git.update_DaveBi=access-esm1.5'
-    # read params from nml files fix bug # 5da9977 
+    
+    # branch = 22-land-parameters-in-code
     um7: 
       require:
         #- '@git.dev-access-esm1.6=access-esm1.6'
-        - '@git.22-land-parameters-in-code=access-esm1.6'
+        - '@git.5da9977a0221a29f493454758f3617ad59d8c2d7=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
