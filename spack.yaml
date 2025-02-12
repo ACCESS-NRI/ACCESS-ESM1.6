@@ -27,7 +27,7 @@ spack:
     um7: 
       require:
         #- '@git.dev-access-esm1.6=access-esm1.6'
-        - '@git.250895beda758da411ac4431174d59db1f2231df=access-esm1.6'
+        - '@git.4b6fc567235eacb8e8978b7f41d2607faeca0e1f=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -77,7 +77,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/250895beda758da411ac4431174d59db1f2231df-{hash:7}'
+          um7: '{name}/4b6fc567235eacb8e8978b7f41d2607faeca0e1f-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
