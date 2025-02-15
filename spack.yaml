@@ -27,7 +27,7 @@ spack:
     um7: 
       require:
         #- '@git.dev-access-esm1.6=access-esm1.6'
-        - '@git.4b6fc567235eacb8e8978b7f41d2607faeca0e1f=access-esm1.6'
+        - '@git.4c20c873cc26b447a2df4520d81e1b67dcfcb8a8=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
