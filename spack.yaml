@@ -77,7 +77,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/4b6fc567235eacb8e8978b7f41d2607faeca0e1f-{hash:7}'
+          um7: '{name}/4c20c873cc26b447a2df4520d81e1b67dcfcb8a8-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
