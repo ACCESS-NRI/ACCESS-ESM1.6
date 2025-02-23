@@ -23,10 +23,10 @@ spack:
       require:
         - '@git.update_DaveBi=access-esm1.5'
     
-    #branch = 61-sand-clay-silt  
+    #branch = wood thinning 
     um7: 
       require:
-        - '@git.56101cb6f17bf1bbbe4e2a386a2799624fa1f94b=access-esm1.6'
+        - '@git.89599ed20719485d4fd0ac0454e25605fd923d6f=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -76,7 +76,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/56101cb6f17bf1bbbe4e2a386a2799624fa1f94b-{hash:7}'
+          um7: '{name}/89599ed20719485d4fd0ac0454e25605fd923d6f-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
