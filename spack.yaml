@@ -47,7 +47,7 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.dev_2024.12.0'
+        - '@git.dev_2025.02.2'
     access-generic-tracers:
       require:
         - '@git.dev_2024.12.0'
