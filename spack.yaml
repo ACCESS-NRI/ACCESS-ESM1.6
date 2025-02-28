@@ -21,7 +21,7 @@ spack:
         - '+access-gtracers'
     cice4:
       require:
-        - '@git.2024.05.21=access-esm1.5'
+        - '@git.access-esm1.5-2025.03.001=access-esm1.5'
     um7:
       require:
         - '@git.dev-access-esm1.6=access-esm1.6'
@@ -47,11 +47,11 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.dev_2025.02.2'
+        - '@git.mom5-dev-2025.02.3'
     # Includes wombatlite-sinking: https://github.com/ACCESS-NRI/GFDL-generic-tracers/commit/4779c63d8b61c191152823404015bdfe963ff92a
     access-generic-tracers:
       require:
-        - '@git.dev_2025.01.0'
+        - '@git.dev-2025.02.1'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -74,7 +74,7 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/dev_2025.01.0'
-          cice4: '{name}/2024.05.21-{hash:7}'
+          cice4: '{name}/access-esm1.5-2025.03.001-{hash:7}'
           um7: '{name}/dev-access-esm1.6-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
