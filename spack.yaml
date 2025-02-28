@@ -24,7 +24,7 @@ spack:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.8fd6949b1e520d5606f9cafee7a458b19f2eb171=access-esm1.6'
+        - '@git.322372ba5b2d72a833eaf9190cbd8594ddb0571a=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -73,7 +73,7 @@ spack:
         projections:
           access-esm1p6: '{name}/2024.12.1'
           cice4: '{name}/2024.05.21-{hash:7}'
-          um7: '{name}/8fd6949b1e520d5606f9cafee7a458b19f2eb171-{hash:7}'
+          um7: '{name}/322372ba5b2d72a833eaf9190cbd8594ddb0571a-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
