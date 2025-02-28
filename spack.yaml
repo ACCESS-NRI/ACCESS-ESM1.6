@@ -73,7 +73,7 @@ spack:
         projections:
           access-esm1p6: '{name}/2024.12.1'
           cice4: '{name}/2024.05.21-{hash:7}'
-          um7: '{name}/file-reorg-{hash:7}'
+          um7: '{name}/8fd6949b1e520d5606f9cafee7a458b19f2eb171-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
