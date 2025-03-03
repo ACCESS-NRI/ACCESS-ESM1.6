@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
+    - access-esm1p6@git.2024.12.1
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -26,7 +26,7 @@ spack:
     #branch = revised_canopy_epot 
     um7: 
       require:
-        - '@git.1839be85a065f8af2588c99d2dbcd7425a94063b=access-esm1.6'
+        - '@git.da845aa74926626499d203d7b3e6cf2e3e240a57=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -74,9 +74,9 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2024.12.0'
+          access-esm1p6: '{name}/2024.12.1'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/1839be85a065f8af2588c99d2dbcd7425a94063b-{hash:7}'
+          um7: '{name}/da845aa74926626499d203d7b3e6cf2e3e240a57-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
