@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
+    - access-esm1p6@git.dev_2025.03.01
   packages:
     mom5:
       require:
@@ -17,10 +17,10 @@ spack:
         - '+access-gtracers'
     cice4:
       require:
-        - '@git.2024.05.21=access-esm1.5'
+        - '@git.update_DaveBi=access-esm1.5'
     um7:
       require:
-        - '@git.dev-access-esm1.6=access-esm1.6'
+        - '@git.86a4e1fc37cb1d6fc1dae536deb5c0bd104506bf=access-esm1.6'
     gcom4:
       require:
         - '@git.2024.05.28=access-esm1.5'
@@ -44,11 +44,10 @@ spack:
         - '@git.dev_2024.12.0'
     access-generic-tracers:
       require:
-        - '@git.dev_2024.12.0'
+        - '@git.dev_2024.12.2'
     access-mocsy:
       require:
         - '@git.2017.12.0'
-
     # Preferences for all packages
     all:
       require:
@@ -66,13 +65,13 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2024.12.0'
-          cice4: '{name}/2024.05.21-{hash:7}'
-          um7: '{name}/dev-access-esm1.6-{hash:7}'
+          access-esm1p6: '{name}/dev_2025.03.01'
+          cice4: '{name}/update_DaveBi-{hash:7}'
+          um7: '{name}/86a4e1fc37cb1d6fc1dae536deb5c0bd104506bf-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
     source_cache: $spack/../restricted/ukmo/source_cache
     build_stage:
-    - $TMPDIR/restricted/spack-stage
+      - $TMPDIR/restricted/spack-stage
