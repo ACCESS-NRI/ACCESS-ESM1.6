@@ -13,11 +13,11 @@ spack:
   packages:
   mom5:
       require:
-        - '@git.dev_2024.08.14=access-esm1.6'
+        - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
     cice4:
       require:
-        - '@git.update_DaveBi=access-esm1.5'
+        - '@git.370e61e8a21e75e3bbcbea7effce55a58e398112=access-esm1.5'
     um7:
       require:
         - '@git.86a4e1fc37cb1d6fc1dae536deb5c0bd104506bf=access-esm1.6'
@@ -44,7 +44,7 @@ spack:
         - '@git.mom5-dev-2025.02.3'
     access-generic-tracers:
       require:
-        - '@git.dev_2025.01.2'
+        - '@git.dev-2025.02.1'
     access-mocsy:
       require:
         - '@git.2017.12.0'
