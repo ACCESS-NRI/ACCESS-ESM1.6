@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2025.03.0
+    - 'access-esm1p6@git.dev_2025.03.0'
   packages:
   mom5:
       require:
