@@ -46,7 +46,7 @@ spack:
         - '@git.dev_2024.12.0'
     access-generic-tracers:
       require:
-        - '@git.dev_2024.12.2'
+        - '@git.dev_2025.01.2'
     access-mocsy:
       require:
         - '@git.2017.12.0'
