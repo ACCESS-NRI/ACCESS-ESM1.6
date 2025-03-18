@@ -23,10 +23,10 @@ spack:
       require:
         - '@git.update_DaveBi=access-esm1.5'
     
-    #branch = revised_canopy_epot 
+    #branch = init-met%tk
     um7: 
       require:
-        - '@git.1839be85a065f8af2588c99d2dbcd7425a94063b=access-esm1.6'
+        - '@git.5b089458f4cb769c9a82c0cefc5f28a6ae4c033d=access-esm1.6'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -76,7 +76,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/1839be85a065f8af2588c99d2dbcd7425a94063b-{hash:7}'
+          um7: '{name}/5b089458f4cb769c9a82c0cefc5f28a6ae4c033d-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
