@@ -19,10 +19,10 @@ spack:
       require:
         - '@git.update_DaveBi=access-esm1.5'
     
-    #branch = MergeExeMar1 
+    #branch = init met%tk1 
     um7: 
       require:
-        - '@git.124a08ba40fb9bc996191c4671f2b546bfeab414=access-esm1.6'
+        - '@git.5b089458f4cb769c9a82c0cefc5f28a6ae4c033d=access-esm1.6'
     gcom4:
       require:
         - '@git.2024.05.28=access-esm1.5'
@@ -70,7 +70,7 @@ spack:
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
-          um7: '{name}/124a08ba40fb9bc996191c4671f2b546bfeab414-{hash:7}'
+          um7: '{name}/5b089458f4cb769c9a82c0cefc5f28a6ae4c033d-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
     install_tree:
