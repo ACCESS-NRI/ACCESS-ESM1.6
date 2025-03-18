@@ -9,25 +9,32 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2025.03.1
-
+    - access-esm1p6@git.dev_2024.12.0
   packages:
+    # Direct ACCESS-NRI dependencies
+    # Note: some packages have branch-specific logic and hence can't use
+    # the usual '@git.DATE' calver (https://calver.org) format, instead
+    # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
         - '@git.dev_2024.08.14=access-esm1.6'
         - '+access-gtracers'
     cice4:
       require:
-        - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
+        - '@git.update_DaveBi=access-esm1.5'
+    
+    #branch = init-met%tk
     um7:
       require:
         - '@git.5b089458f4cb769c9a82c0cefc5f28a6ae4c033d=access-esm1.6'
+    # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
         - '@git.2024.05.28=access-esm1.5'
     oasis3-mct:
       require:
         - '@git.access-esm1.5_2024.05.24=access-esm1.5'
+    # Other dependencies
     openmpi:
       require:
         - '@4.0.2'
@@ -45,7 +52,7 @@ spack:
         - '@git.dev_2024.12.0'
     access-generic-tracers:
       require:
-        - '@git.dev_2025.01.2'
+        - '@git.dev_2024.12.2'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -67,10 +74,10 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2025.03.1'
-          cice4: '{name}/370e61e8a21e75e3bbcbea7effce55a58e398112-{hash:7}'
+          access-esm1p6: '{name}/dev_2024.12.0'
+          cice4: '{name}/update_DaveBi-{hash:7}'
           um7: '{name}/5b089458f4cb769c9a82c0cefc5f28a6ae4c033d-{hash:7}'
-          mom5: '{name}/dev-2025.03.001-{hash:7}'
+          mom5: '{name}/dev_2024.08.14-{hash:7}'
 
   config:
     install_tree:
