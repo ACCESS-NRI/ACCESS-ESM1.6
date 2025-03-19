@@ -13,6 +13,7 @@ jobs:
     uses: access-nri/build-cd/.github/workflows/cd.yml@v4
     with:
       model: ${{ vars.NAME }}
+      root-sbd: access-esm1p6
     permissions:
       contents: write
       # Required because later workflows also handle on.pull_request trigger
