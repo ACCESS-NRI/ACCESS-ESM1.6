@@ -17,10 +17,8 @@ spack:
         - '+access-gtracers'
     cice4:
       require:
-        - '@git.update_DaveBi=access-esm1.5'
-    
-    #branch = dev-access-esm1.6 
-    um7: 
+        - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
+    um7:
       require:
         - '@git.86a4e1fc37cb1d6fc1dae536deb5c0bd104506bf=access-esm1.6'
     gcom4:
@@ -69,7 +67,7 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/dev_2024.12.0'
-          cice4: '{name}/update_DaveBi-{hash:7}'
+          cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
           um7: '{name}/86a4e1fc37cb1d6fc1dae536deb5c0bd104506bf-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
   config:
