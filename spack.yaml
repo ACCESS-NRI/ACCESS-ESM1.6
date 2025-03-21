@@ -9,7 +9,9 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
+
     - access-esm1p6@git.dev_2024.12.0
+
   packages:
     mom5:
       require:
@@ -70,6 +72,7 @@ spack:
           cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
           um7: '{name}/14bfa6418bfddd98728fb0f476723576e7080a95-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
+
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
