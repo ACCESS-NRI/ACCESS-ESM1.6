@@ -9,7 +9,6 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-
     - access-esm1p6@git.dev_2024.12.0
 
   packages:
@@ -31,7 +30,7 @@ spack:
         - '@git.access-esm1.5_2024.05.24=access-esm1.5'
     openmpi:
       require:
-        - '@4.0.2'
+        - '@4.1.5'
     netcdf-c:
       require:
         - '@4.7.4'
