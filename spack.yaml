@@ -55,6 +55,14 @@ spack:
       require:
         - '@1.10.11'
 
+    gcc-runtime:
+      require:
+        - '%gcc'
+
+    glibc:
+      require:
+        - '%gcc'
+
     # Preferences for all packages
     all:
       require:
