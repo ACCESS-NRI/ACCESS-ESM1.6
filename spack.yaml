@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2025.03.3
+    - access-esm1p6@git.2025.03.4=null
   packages:
     mom5:
       require:
@@ -48,7 +48,6 @@ spack:
     access-mocsy:
       require:
         - '@git.2017.12.0'
-
     # Preferences for all packages
     all:
       require:
@@ -66,7 +65,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2025.03.3'
+          access-esm1p6: '{name}/2025.03.4'
           cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
           um7: '{name}/86a4e1fc37cb1d6fc1dae536deb5c0bd104506bf-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
@@ -75,4 +74,4 @@ spack:
       root: $spack/../restricted/ukmo/release
     source_cache: $spack/../restricted/ukmo/source_cache
     build_stage:
-    - $TMPDIR/restricted/spack-stage
+      - $TMPDIR/restricted/spack-stage
