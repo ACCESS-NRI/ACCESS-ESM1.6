@@ -30,9 +30,11 @@ spack:
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
-        - 'cflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
-        - 'cxxflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
+        - 'fflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto"'
+        - 'cflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto"'
+        - 'cxxflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto"'
+        - 'ldflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto -fuse-ld=lld"'
+
 
     # Intermediate-level dependencies
     gcom4:
