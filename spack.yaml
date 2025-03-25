@@ -23,9 +23,9 @@ spack:
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
-        - 'cflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
-        - 'cxxflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
+        - 'fflags="-march=cascadelake -axsapphirerapids,CORE-AVX2"'
+        - 'cflags="-march=cascadelake -axsapphirerapids,CORE-AVX2"'
+        - 'cxxflags="-march=cascadelake -axsapphirerapids,CORE-AVX2"'
 
     um7:
       require:
