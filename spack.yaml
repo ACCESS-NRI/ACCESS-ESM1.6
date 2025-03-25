@@ -15,25 +15,25 @@ spack:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
-        - 'cflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
-        - 'cxxflags="-march=sapphirerapids -axcascadelake,CORE-AVX2"'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
 
 
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=cascadelake -axsapphirerapids,CORE-AVX2"'
-        - 'cflags="-march=cascadelake -axsapphirerapids,CORE-AVX2"'
-        - 'cxxflags="-march=cascadelake -axsapphirerapids,CORE-AVX2"'
+        - 'fflags="-march=cascadelake -axsapphirerapids"'
+        - 'cflags="-march=cascadelake -axsapphirerapids"'
+        - 'cxxflags="-march=cascadelake -axsapphirerapids"'
 
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto"'
-        - 'cflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto"'
-        - 'cxxflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto"'
-        - 'ldflags="-march=sapphirerapids -axcascadelake,CORE-AVX2 -flto -fuse-ld=lld"'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -flto"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -flto"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -flto"'
+        - 'ldflags="-march=sapphirerapids -mtune=sapphirerapids -flto -fuse-ld=lld"'
 
 
     # Intermediate-level dependencies
