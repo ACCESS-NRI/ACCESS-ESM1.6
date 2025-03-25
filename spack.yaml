@@ -2,19 +2,18 @@
 #
 # It describes a set of packages to be installed, along with
 # configuration settings.
-
+#
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
 # - MOM5 from development branch
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
-
+    - access-esm1p6@git.dev_2025.03.3
   packages:
     mom5:
       require:
-        - '@git.dev_2024.08.14=access-esm1.6'
+        - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
     cice4:
       require:
@@ -27,7 +26,7 @@ spack:
         - '@git.2024.05.28=access-esm1.5'
     oasis3-mct:
       require:
-        - '@git.access-esm1.5_2024.05.24=access-esm1.5'
+        - '@git.access-esm1.5-2025.03.001=access-esm1.5'
     openmpi:
       require:
         - '@4.1.5'
@@ -42,10 +41,10 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.dev_2024.12.0'
+        - '@git.mom5-dev-2025.02.3'
     access-generic-tracers:
       require:
-        - '@git.dev_2025.01.2'
+        - '@git.dev-2025.02.1'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -67,11 +66,10 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2024.12.0'
+          access-esm1p6: '{name}/dev_2025.03.3'
           cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
           um7: '{name}/4256e88953fab6046de9ba54c13ed893d73befff-{hash:7}'
-          mom5: '{name}/dev_2024.08.14-{hash:7}'
-
+          mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
