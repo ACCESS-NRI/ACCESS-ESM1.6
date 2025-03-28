@@ -15,25 +15,25 @@ spack:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3"'
-        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3"'
-        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3"'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
 
 
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 "'
-        - 'cflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 "'
-        - 'cxxflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 "'
+        - 'fflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
+        - 'cflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
+        - 'cxxflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
 
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3  -flto"'
-        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3  -flto"'
-        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3  -flto"'
-        - 'ldflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3  -flto -fuse-ld=lld"'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens -flto"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3  -fp-model=fast=1 -fimf-precision=high -fprotect-parens -flto"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens -flto"'
+        - 'ldflags="-march=sapphirerapids -mtune=sapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3  -fp-model=fast=1 -fimf-precision=high -fprotect-parens -flto -fuse-ld=lld"'
 
 
     # Intermediate-level dependencies
