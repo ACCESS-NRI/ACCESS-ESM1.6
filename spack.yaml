@@ -9,7 +9,8 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2024.12.0
+    - access-esm1p6@git.dev_2025.03.4
+
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -37,7 +38,7 @@ spack:
     # Other dependencies
     openmpi:
       require:
-        - '@4.0.2'
+        - '@4.1.5'
     netcdf-c:
       require:
         - '@4.7.4'
@@ -74,10 +75,10 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2024.12.0'
-          cice4: '{name}/update_DaveBi-{hash:7}'
+          access-esm1p6: '{name}/dev_2025.03.4'
+          cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
           um7: '{name}/5b089458f4cb769c9a82c0cefc5f28a6ae4c033d-{hash:7}'
-          mom5: '{name}/dev_2024.08.14-{hash:7}'
+          mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
