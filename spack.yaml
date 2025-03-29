@@ -75,10 +75,17 @@ spack:
           - um7
           - mom5
         projections:
+<<<<<<< HEAD
+          access-esm1p6: '{name}/dev_2025.03.4'
+          cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
+          um7: '{name}/5b089458f4cb769c9a82c0cefc5f28a6ae4c033d-{hash:7}'
+          mom5: '{name}/dev-2025.03.001-{hash:7}'
+=======
           access-esm1p6: '{name}/dev_2024.12.0'
           cice4: '{name}/update_DaveBi-{hash:7}'
           um7: '{name}/55f3739c0b54cbca97a3145f669f1278d49ddba4-{hash:7}'
           mom5: '{name}/dev_2024.08.14-{hash:7}'
+>>>>>>> 352c32a (55f3739c0b54cbca97a3145f669f1278d49ddba4)
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
