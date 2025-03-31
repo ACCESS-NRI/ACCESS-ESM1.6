@@ -23,9 +23,9 @@ spack:
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens -assume nan_compares -assume ieee_compares"'
-        - 'cflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens -assume nan_compares -assume ieee_compares"'
-        - 'cxxflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens -assume nan_compares -assume ieee_compares"'
+        - 'fflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
+        - 'cflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
+        - 'cxxflags="-march=cascadelake -axsapphirerapids -qopt-zmm-usage=high -qopt-prefetch=3 -fp-model=fast=1 -fimf-precision=high -fprotect-parens"'
 
     um7:
       require:
