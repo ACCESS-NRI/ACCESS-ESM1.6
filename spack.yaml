@@ -9,15 +9,15 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6@git.dev_2025.03.4
+    - access-esm1p6@git.dev_2025.03.cice5 cice=5
   packages:
     mom5:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-    cice4:
+    cice5:
       require:
-        - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
+        - '@git.3f1c6afd0a20043156f83571e5b6deba7ef4f263=access-esm1.6'
     um7:
       require:
         - '@git.7288a51bf7aae3d2836aca674a1ae7ed15796e01=access-esm1.6'
@@ -62,12 +62,12 @@ spack:
       tcl:
         include:
           - access-esm1p6
-          - cice4
+          - cice5
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2025.03.4'
-          cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
+          access-esm1p6: '{name}/dev_2025.03.cice5'
+          cice5: '{name}/3f1c6afd0a20043156f83571e5b6deba7ef4f263-{hash:7}'
           um7: '{name}/7288a51bf7aae3d2836aca674a1ae7ed15796e01-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
