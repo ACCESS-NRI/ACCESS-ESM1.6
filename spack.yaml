@@ -13,7 +13,8 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.dev-2025.03.001=access-esm1.6'
+        # - '@git.dev-2025.03.001=access-esm1.6'
+        - '@git.68ba5781d56d690669293ac7fdcc8a453fac58f0=access-esm1.6'
         - '+access-gtracers'
         - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
         - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens"'
