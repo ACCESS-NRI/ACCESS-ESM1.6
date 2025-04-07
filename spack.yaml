@@ -15,7 +15,7 @@ spack:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares"'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
         - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens"'
 
@@ -23,14 +23,14 @@ spack:
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=cascadelake -axsapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares"'
+        - 'fflags="-march=cascadelake -axsapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
         - 'cflags="-march=cascadelake -axsapphirerapids -fprotect-parens"'
         - 'cxxflags="-march=cascadelake -axsapphirerapids -fprotect-parens"'
 
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -flto"'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge -flto"'
         - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -flto"'
         - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -flto"'
         - 'ldflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -flto -fuse-ld=lld"'
