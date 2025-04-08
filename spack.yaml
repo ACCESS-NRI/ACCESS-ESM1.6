@@ -9,7 +9,7 @@
 # - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
 spack:
   specs:
-    - access-esm1p6
+    - access-esm1p6@latest
   packages:
     mom5:
       require:
@@ -79,7 +79,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/dev_2025.03.4'
+          access-esm1p6: '{name}/latest'
           cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
           um7: '{name}/7288a51bf7aae3d2836aca674a1ae7ed15796e01-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
