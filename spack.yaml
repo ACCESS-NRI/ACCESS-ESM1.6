@@ -15,24 +15,15 @@ spack:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-march=cascadelake -mtune=cascadelake -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
-        - 'cflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
-        - 'cxxflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
-
+        - 'fflags="-fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
     cice4:
       require:
-        - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=cascadelake -mtune=cascadelake -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
-        - 'cflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
-        - 'cxxflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
-
+        - '@git.access-esm1.6-2025.04.000=access-esm1.5'
+        - 'fflags="-fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
     um7:
       require:
-        - '@git.7288a51bf7aae3d2836aca674a1ae7ed15796e01=access-esm1.6'
-        - 'fflags="-march=cascadelake -mtune=cascadelake -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
-        - 'cflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
-        - 'cxxflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
-        - 'ldflags="-march=cascadelake -mtune=cascadelake -fprotect-parens"'
+        - '@git.access-esm1.6-2025.04.000=access-esm1.6'
+        - 'fflags="-fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
 
     gcom4:
       require:
@@ -54,10 +45,10 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.mom5-dev-2025.02.3'
+        - '@git.mom5-2025.04.001'
     access-generic-tracers:
       require:
-        - '@git.dev-2025.02.1'
+        - '@git.dev-2025.04.001'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -65,6 +56,7 @@ spack:
     # Preferences for all packages
     all:
       require:
+        # - '%intel@19.0.3.199'
         - '%intel@2021.10.0'
         - 'target=x86_64_v4'
   view: true
@@ -80,8 +72,8 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/latest'
-          cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
-          um7: '{name}/7288a51bf7aae3d2836aca674a1ae7ed15796e01-{hash:7}'
+          cice4: '{name}/access-esm1.6-2025.04.000-{hash:7}'
+          um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
     install_tree:
