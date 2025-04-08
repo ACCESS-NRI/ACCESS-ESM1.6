@@ -65,7 +65,7 @@ spack:
     # Preferences for all packages
     all:
       require:
-        - '%intel@19.0.3.199'
+        - '%intel@2021.10.0'
         - 'target=x86_64_v4'
   view: true
   concretizer:
