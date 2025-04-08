@@ -58,10 +58,16 @@ spack:
       require:
         # - '%intel@19.0.3.199'
         - '%intel@2021.10.0'
-        - 'target=x86_64_v4'
+        - 'target=cascadelake'
   view: true
   concretizer:
     unify: true
+    targets:
+        # Determine whether we want to target specific or generic
+        # microarchitectures. Valid values are: "microarchitectures" or "generic".
+        # An example of "microarchitectures" would be "skylake" or "bulldozer",
+        # while an example of "generic" would be "aarch64" or "x86_64_v4".
+        granularity: microarchitectures
   modules:
     default:
       tcl:
