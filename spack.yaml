@@ -19,7 +19,7 @@ spack:
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
-        - 'fflags="-fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -init=snan -init=array -init=huge"'
+        - 'fflags="-fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all"'
     um7:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.6'
