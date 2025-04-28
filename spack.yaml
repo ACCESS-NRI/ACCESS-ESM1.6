@@ -13,8 +13,7 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.dev-2025.03.001=access-esm1.6'
-        - '+access-gtracers'
+        - '@git.dev-2025.03.001=access-esm1.6+deterministic'
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
