@@ -30,10 +30,10 @@ spack:
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-g -O2 -march=sapphirerapids   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -fno-optimize-sibling-calls -flto -align array64byte -assume nan_compares -assume ieee_compares -traceback "'
-        - 'cflags="-g -O2 -march=sapphirerapids   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -fno-optimize-sibling-calls -flto"'
-        - 'cxxflags="-g -O2 -march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -fno-optimize-sibling-calls -flto"'
-        - 'ldflags="-g -O2 -march=sapphirerapids  -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -fno-optimize-sibling-calls -flto -fuse-ld=lld"'
+        - 'fflags="-g -O2 -march=sapphirerapids   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -assume nan_compares -assume ieee_compares -traceback "'
+        - 'cflags="-g -O2 -march=sapphirerapids   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
+        - 'cxxflags="-g -O2 -march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
+        - 'ldflags="-g -O2 -march=sapphirerapids  -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -fuse-ld=lld"'
 
 
     # Intermediate-level dependencies
