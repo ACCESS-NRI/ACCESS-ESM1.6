@@ -15,25 +15,25 @@ spack:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -unroll  -vec-threshold0"'
-        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -unroll"'
-        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -unroll"'
+        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -unroll  -vec-threshold0"'
+        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens -unroll"'
+        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens -unroll"'
 
 
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-march=cascadelake -axsapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -unroll  -vec-threshold0"'
-        - 'cflags="-march=cascadelake -axsapphirerapids -fprotect-parens -unroll"'
-        - 'cxxflags="-march=cascadelake -axsapphirerapids -fprotect-parens -unroll"'
+        - 'fflags="g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -unroll  -vec-threshold0"'
+        - 'cflags="g3 -xCORE-AVX2 -fprotect-parens -unroll"'
+        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens -unroll"'
 
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-g3 -O2 -march=sapphirerapids   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -assume nan_compares -assume ieee_compares -traceback "'
-        - 'cflags="-g3 -O2 -march=sapphirerapids   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
-        - 'cxxflags="-g3 -O2 -march=sapphirerapids -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
-        - 'ldflags="-g3 -O2 -march=sapphirerapids  -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -O2 -xCORE-AVX2   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -assume nan_compares -assume ieee_compares -traceback "'
+        - 'cflags="-g3 -O2 -xCORE-AVX2   -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
+        - 'cxxflags="-g3 -O2 -xCORE-AVX2 -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
+        - 'ldflags="-g3 -O2 -xCORE-AVX2  -mtune=sapphirerapids -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -fuse-ld=lld"'
 
 
     # Intermediate-level dependencies
