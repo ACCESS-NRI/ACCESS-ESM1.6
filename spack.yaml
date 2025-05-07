@@ -23,8 +23,8 @@ spack:
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -unroll  -vec-threshold0"'
-        - 'cflags="g3 -xCORE-AVX2 -fprotect-parens -unroll"'
+        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -fpe0 -traceback -check all -unroll  -vec-threshold0"'
+        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens -unroll"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens -unroll"'
 
     um7:
