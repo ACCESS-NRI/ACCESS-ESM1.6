@@ -83,7 +83,7 @@ spack:
     all:
       require:
         - '%oneapi@2025.0.4'
-        - 'target=x86_64_v4'
+        - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: false
