@@ -30,10 +30,10 @@ spack:
     um7:
       require:
         - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
-        - 'fflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -assume nan_compares -assume ieee_compares -traceback -init=snan -init=array -init=huge"'
+        - 'fflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -heap-arrays -assume nan_compares -assume ieee_compares -traceback -init=snan -init=array -init=huge "'
         - 'cflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
         - 'cxxflags="-g3 -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
-        - 'ldflags="-g3  -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -fuse-ld=lld -init=snan -init=array -init=huge"'
+        - 'ldflags="-g3  -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -fuse-ld=lld -heap-arrays -init=snan -init=array -init=huge"'
 
 
     # Intermediate-level dependencies
