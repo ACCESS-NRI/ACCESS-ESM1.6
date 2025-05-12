@@ -13,7 +13,7 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.1fdf6ffe8098189e159f8daae93c3b8a66c12add=access-esm1.6'
+        - '@git.51f67bf4a554d62f7b1ce99caf2f39dc1ef6b7b3=access-esm1.6'
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
@@ -68,7 +68,7 @@ spack:
           access-esm1p6: '{name}/dev_2025.04.000'
           cice4: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
-          mom5: '{name}/1fdf6ffe8098189e159f8daae93c3b8a66c12add-{hash:7}'
+          mom5: '{name}/51f67bf4a554d62f7b1ce99caf2f39dc1ef6b7b3-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
