@@ -29,7 +29,7 @@ spack:
 
     um7:
       require:
-        - '@git.e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd=access-esm1.6'
+        - '@git.ad219516fcbb5386739e3e07ab7fef6a54634034=access-esm1.6'
         - 'fflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -heap-arrays -assume nan_compares -assume ieee_compares -assume nominus0 -traceback"'
         - 'cflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
         - 'cxxflags="-g3 -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
@@ -129,7 +129,7 @@ spack:
         projections:
           access-esm1p6: '{name}/latest'
           cice4: '{name}/b51e3529bd78fd852760e348983e2334341f861d-{hash:7}'
-          um7: '{name}/e31a07dfb4c57b5ac6d9277e6592f04b8e9357cd-{hash:7}'
+          um7: '{name}/ad219516fcbb5386739e3e07ab7fef6a54634034-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
     install_tree:
