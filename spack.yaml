@@ -13,7 +13,7 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.51f67bf4a554d62f7b1ce99caf2f39dc1ef6b7b3=access-esm1.6'
+        - '@git.fcb3b49d389dcf36a6b0c7c0a9394c81a1170ee4=access-esm1.6'  # On update_cmake
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
@@ -40,10 +40,10 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.c56cd23ed38ee84ae3c4e57fb4cb0d18ecfe1c70' # On mom5-preserve-answers
+        - '@git.mom5-2025.05.000'
     access-generic-tracers:
       require:
-        - '@git.bf2dbee5160929125c73b7d1ef32e6b0063e028b' # On update-cmake
+        - '@git.c5b330a2a74752516c16c92caa3c52879ecd3dea'  # On development
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -68,7 +68,7 @@ spack:
           access-esm1p6: '{name}/dev_2025.04.000'
           cice4: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
-          mom5: '{name}/51f67bf4a554d62f7b1ce99caf2f39dc1ef6b7b3-{hash:7}'
+          mom5: '{name}/fcb3b49d389dcf36a6b0c7c0a9394c81a1170ee4-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
