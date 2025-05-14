@@ -15,91 +15,45 @@ spack:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
-
     cice4:
       require:
         - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
     um7:
       require:
         - '@git.ad219516fcbb5386739e3e07ab7fef6a54634034=access-esm1.6'
-        - 'fflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -align array64byte -heap-arrays -assume nan_compares -assume ieee_compares -assume nominus0 -traceback"'
-        - 'cflags="-g3   -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
-        - 'cxxflags="-g3 -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto"'
-        - 'ldflags="-g3  -O2 -xCORE-AVX2 -fprotect-parens -qopt-prefetch-loads-only -qopt-zmm-usage=high -vec-threshold0 -unroll -fno-omit-frame-pointer -flto -fuse-ld=lld -heap-arrays"'
-
 
     # Intermediate-level dependencies
     gcom4:
       require:
         - '@git.0f17657a3b21cda9c0f3c403d99667e436062e38=access-esm1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
 
     oasis3-mct:
       require:
         - '@git.7036f26ece68c26083fec2fe96e3cb1faed7559d=access-esm1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
 
     access-fms:
       require:
         - '@git.mom5-dev-2025.02.3'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
     access-generic-tracers:
       require:
         - '@git.dev-2025.02.1'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
     access-mocsy:
       require:
         - '@git.2017.12.0'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
 
     # System-level packages
     openmpi:
       require:
-        - '@5.0.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
+        - '@4.1.5'
     netcdf-c:
       require:
-        - '@4.9.2'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
+        - '@4.7.4'
     netcdf-fortran:
       require:
-        - '@4.6.1'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-
+        - '@4.5.2'
     hdf5:
       require:
-        - '@1.14.3'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -assume nominus0 -fpe0 -traceback -check all"'
-        - 'cflags="-g3 -xCORE-AVX2"'
-        - 'cxxflags="-g3 -xCORE-AVX2"'
+        - '@1.10.11'
 
     gcc-runtime:
       require:
@@ -109,12 +63,11 @@ spack:
       require:
         - '%gcc'
 
-
     # Preferences for all packages
     all:
       require:
         - '%oneapi@2025.0.4'
-        # - 'target=x86_64_v3'
+        - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: false
