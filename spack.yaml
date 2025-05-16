@@ -9,7 +9,7 @@
 # - CICE5 from development branch 
 spack:
   specs:
-    - access-esm1p6@git.dev_2025.04.03.cice5 cice=5
+    - access-esm1p6@git.dev_2025.04.cice5 cice=5
   packages:
     mom5:
       require:
