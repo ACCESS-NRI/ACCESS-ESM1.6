@@ -58,7 +58,7 @@ spack:
       require:
         # - '%intel@19.0.3.199'
         - '%intel@2021.10.0'
-        - 'target=cascadelake'
+        - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: true
