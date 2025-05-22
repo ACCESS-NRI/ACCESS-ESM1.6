@@ -13,7 +13,7 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.fcb3b49d389dcf36a6b0c7c0a9394c81a1170ee4=access-esm1.6'  # On update_cmake
+        - '@git.e0b8d3d2a1d0ea242cf0a4fdaae84bb773c18c10=access-esm1.6'  # On update_cmake
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
@@ -25,7 +25,7 @@ spack:
         - '@git.2024.05.28=access-esm1.5'
     oasis3-mct:
       require:
-        - '@git.access-esm1.5-2025.03.001=access-esm1.5'
+        - '@git.2025.03.001'
     openmpi:
       require:
         - '@4.1.5'
@@ -43,7 +43,7 @@ spack:
         - '@git.mom5-2025.05.000'
     access-generic-tracers:
       require:
-        - '@git.c5b330a2a74752516c16c92caa3c52879ecd3dea'  # On development
+        - '@git.dev-2025.05.001'
     access-mocsy:
       require:
         - '@git.2017.12.0'
@@ -68,7 +68,7 @@ spack:
           access-esm1p6: '{name}/dev_2025.04.000'
           cice4: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
-          mom5: '{name}/fcb3b49d389dcf36a6b0c7c0a9394c81a1170ee4-{hash:7}'
+          mom5: '{name}/e0b8d3d2a1d0ea242cf0a4fdaae84bb773c18c10-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
