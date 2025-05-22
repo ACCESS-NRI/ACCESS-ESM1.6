@@ -17,7 +17,7 @@ spack:
         - '+access-gtracers'
     cice5:
       require:
-        - '@git.02bff0578ade8362e2fca729d450378be7149e8a=access-esm1.6'
+        - '@git.6b9d35f3f51818f4ff721803dcfb76aadd04b8cd=access-esm1.6'
     um7:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.6'
