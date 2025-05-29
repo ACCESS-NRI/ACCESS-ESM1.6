@@ -27,7 +27,7 @@ spack:
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
     um7:
       require:
-        - '@git.ad219516fcbb5386739e3e07ab7fef6a54634034=access-esm1.6'
+        - '@git.1ea43190add8627fb317906d257f278763b55125=access-esm1.6'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
