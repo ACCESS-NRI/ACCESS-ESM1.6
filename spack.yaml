@@ -13,9 +13,9 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.7f3317663cd7ade995476c4e0dc09d361ad3bd36=access-esm1.6'
+        - '@git.003c8a80bd223d2722b4aaca4174b3e3a21d87e6=access-esm1.6'
         - '+access-gtracers'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -assume dummy_aliases"'
+        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
     cice4:
