@@ -21,7 +21,7 @@ spack:
     cice4:
       require:
         # '/qljzx7x'
-        - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
+        # - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
