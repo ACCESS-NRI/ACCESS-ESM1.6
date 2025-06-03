@@ -14,7 +14,6 @@ spack:
     mom5:
       require:
         - '@git.ad1e41e2f7687a09e82addf5edbcca18fdd43ed5=access-esm1.6'
-        - '+access-gtracers'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
@@ -52,14 +51,14 @@ spack:
     access-fms:
       require:
         # '/finlfac'
-        - '@git.mom5-2025.04.001'
+        - '@git.mom5-2025.05.000'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
     access-generic-tracers:
       require:
         # '/z2t66eo'
-        - '@git.dev-2025.04.001'
+        - '@git.dev-2025.05.001'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
