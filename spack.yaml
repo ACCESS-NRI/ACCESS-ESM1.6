@@ -1,4 +1,4 @@
-# This is a Spack Environment file.
+# This is a Spack Environment file
 #
 # It describes a set of packages to be installed, along with
 # configuration settings.
@@ -17,7 +17,7 @@ spack:
         - '+access-gtracers'
     cice5:
       require:
-        - '@git.0996c7636bc45d4e3d95419f8e7838e1d1f05739=access-esm1.6'
+        - '@git.6e57c13d1d70275d172b06e3cbdbb36c8d3b139e=access-esm1.6'
     um7:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.6'
@@ -67,7 +67,7 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/dev_2025.04.000'
-          cice5: '{name}/0996c7636bc45d4e3d95419f8e7838e1d1f05739-{hash:7}'
+          cice5: '{name}/6e57c13d1d70275d172b06e3cbdbb36c8d3b139e-{hash:7}'
           um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
