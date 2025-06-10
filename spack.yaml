@@ -14,7 +14,6 @@ spack:
     mom5:
       require:
         - '@git.dev-2025.03.001=access-esm1.6'
-        - '+access-gtracers'
     cice5:
       require:
         - '@git.fbc448c0ed8dc0d81a6d78d9a548f6b41e8698e3=access-esm1.6'
