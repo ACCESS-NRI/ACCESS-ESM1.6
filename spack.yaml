@@ -22,7 +22,7 @@ spack:
         - '@git.a2f2f0504a6d4a7d5d128d110d7eb725370d4ce7=access-esm1.6'
     cable:
       require:
-        - '@git.c069680d4796def94f075f6eb975923d6c345685=access-esm1.6'
+        - '@git.648cdaa7dfeb929b2e6df046e965e1484a184372=access-esm1.6'
         - '+library+mpi'
         - 'fflags="-i8 -r8"'
     gcom4:
