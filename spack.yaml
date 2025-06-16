@@ -9,7 +9,7 @@
 # - CICE5 from access-esm1.6 branch.
 spack:
   specs:
-    - access-esm1p6@latest cice=5
+    - 'access-esm1p6 cice=5 um=access-esm1.6'
   packages:
     mom5:
       require:
