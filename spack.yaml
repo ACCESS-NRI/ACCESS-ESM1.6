@@ -6,10 +6,10 @@
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
 # - MOM5 from development branch
-# - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
+# - CICE5 from access-esm1.6 branch.
 spack:
   specs:
-    - access-esm1p6@latest
+    - access-esm1p6@latest cice=5
   packages:
     mom5:
       require:
@@ -17,11 +17,9 @@ spack:
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-    cice4:
+    cice5:
       require:
-        # '/qljzx7x'
-        # - '@git.b51e3529bd78fd852760e348983e2334341f861d=access-esm1.5'
-        - '@git.access-esm1.6-2025.04.000=access-esm1.5'
+        - '@git.a0e238d50dfca346f171dc4273305b6a09e5d4a7=access-esm1.6'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
