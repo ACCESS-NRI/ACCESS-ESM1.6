@@ -9,7 +9,7 @@
 # - CICE5 from access-esm1.6 branch.
 spack:
   specs:
-    - 'access-esm1p6@latest cice=5 um=access-esm1.6'
+    - access-esm1p6@latest cice=5
   packages:
     mom5:
       require:
@@ -107,6 +107,10 @@ spack:
         - '%gcc'
 
     glibc:
+      require:
+        - '%gcc'
+        
+    zlib-ng:
       require:
         - '%gcc'
 
