@@ -17,7 +17,6 @@ spack:
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -no-ftz -no-daz"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - '+access-gtracers'
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
