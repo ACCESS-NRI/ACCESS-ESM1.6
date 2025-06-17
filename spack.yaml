@@ -114,6 +114,10 @@ spack:
       require:
         - '%gcc'
 
+    pkgconf:
+      require:
+        - '%gcc'
+
     # Preferences for all packages
     all:
       require:
