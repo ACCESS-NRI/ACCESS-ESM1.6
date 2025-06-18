@@ -24,7 +24,8 @@ spack:
       require:
         - '@git.648cdaa7dfeb929b2e6df046e965e1484a184372=access-esm1.6'
         - '+library+mpi'
-        - 'fflags="-i8 -r8"'
+        - 'fflags="-i8 -r8 -ftz -what -fno-alias -stack-temps -safe-cray-ptr"'
+        - 'cflags="-xCORE-AVX512"'
     gcom4:
       require:
         - '@git.0f17657a3b21cda9c0f3c403d99667e436062e38=access-esm1.5'
