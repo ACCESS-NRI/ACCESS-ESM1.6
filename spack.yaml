@@ -25,7 +25,7 @@ spack:
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
     um7:
       require:
-        - '@git.1ea43190add8627fb317906d257f278763b55125=access-esm1.6'
+        - '@git.access-esm1.6-2025.06.000=access-esm1.6'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
@@ -119,7 +119,7 @@ spack:
         projections:
           access-esm1p6: '{name}/latest'
           cice4: '{name}/access-esm1.6-2025.04.000-{hash:7}'
-          um7: '{name}/1ea43190add8627fb317906d257f278763b55125-{hash:7}'
+          um7: '{name}/access-esm1.6-2025.06.000-{hash:7}'
           mom5: '{name}/b0c3e51f6959c90d2a8d034fc4c54846f36ddfd4-{hash:7}'
   config:
     install_tree:
