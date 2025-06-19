@@ -82,7 +82,6 @@ spack:
     netcdf-c:
       require:
         - '@4.9.2'
-        - '+ipo'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
