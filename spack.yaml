@@ -98,7 +98,7 @@ spack:
 
     hdf5:
       require:
-        - '@1.14.6'
+        - '@1.14.5'
         - '+ipo'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
