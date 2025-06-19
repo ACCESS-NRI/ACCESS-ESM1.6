@@ -21,9 +21,10 @@ spack:
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'ldflags="-flto -fuse-ld=lld"'
     um7:
       require:
         - '@git.access-esm1.6-2025.06.000=access-esm1.6'
