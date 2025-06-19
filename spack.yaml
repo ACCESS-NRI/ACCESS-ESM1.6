@@ -119,8 +119,8 @@ spack:
         projections:
           access-esm1p6: '{name}/latest'
           cice5: '{name}/a0e238d50dfca346f171dc4273305b6a09e5d4a7-{hash:7}'
-          um7: '{name}/ad219516fcbb5386739e3e07ab7fef6a54634034-{hash:7}'
-          mom5: '{name}/oneapi-floatingpoint-fix-{hash:7}'
+          um7: '{name}/1ea43190add8627fb317906d257f278763b55125-{hash:7}'
+          mom5: '{name}/ad1e41e2f7687a09e82addf5edbcca18fdd43ed5-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
