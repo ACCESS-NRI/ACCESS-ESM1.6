@@ -17,7 +17,7 @@ spack:
         - '+access-gtracers'
     cice5:
       require:
-        - '@git.db4fb28cddd94a34aca7261425f16ed80f714a1d=access-esm1.6'
+        - '@git.6aeb8ba7a81ede155fa294806d5881f3d253ebf8=access-esm1.6'
     um7:
       require:
         - '@git.access-esm1.6-2025.06.000=access-esm1.6'
@@ -67,7 +67,7 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/dev_2025.04.000'
-          cice5: '{name}/db4fb28cddd94a34aca7261425f16ed80f714a1d-{hash:7}'
+          cice5: '{name}/6aeb8ba7a81ede155fa294806d5881f3d253ebf8-{hash:7}'
           um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
