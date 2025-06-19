@@ -81,7 +81,8 @@ spack:
 
     netcdf-c:
       require:
-        - '@4.7.4'
+        - '@4.9.2'
+        - '+ipo'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
@@ -89,7 +90,7 @@ spack:
 
     netcdf-fortran:
       require:
-        - '@4.5.2'
+        - '@4.6.1'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
@@ -97,7 +98,8 @@ spack:
 
     hdf5:
       require:
-        - '@1.10.11'
+        - '@1.14.6'
+        - '+ipo'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
