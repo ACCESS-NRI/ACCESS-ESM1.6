@@ -19,7 +19,7 @@ spack:
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
     cice5:
       require:
-        - '@git.a0e238d50dfca346f171dc4273305b6a09e5d4a7=access-esm1.6'
+        - '@git.ce970cdaa640889dab9454cbd7efaf9f628a2e8a=access-esm1.6'
         - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
         - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
         - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
