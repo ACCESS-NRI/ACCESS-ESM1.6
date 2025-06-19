@@ -135,7 +135,7 @@ spack:
           access-esm1p6: '{name}/latest'
           cice4: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           um7: '{name}/access-esm1.6-2025.06.000-{hash:7}'
-          mom5: '{name}/b0c3e51f6959c90d2a8d034fc4c54846f36ddfd4-{hash:7}'
+          mom5: '{name}/9f575d8532579a0f717002c571e68037e79c7396-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
