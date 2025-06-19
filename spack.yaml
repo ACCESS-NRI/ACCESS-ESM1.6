@@ -15,7 +15,7 @@ spack:
       require:
         - '@git.ad1e41e2f7687a09e82addf5edbcca18fdd43ed5=access-esm1.6'
         - fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares
-          -traceback"
+          -traceback -fpe3"
         - cflags="-g3 -xCORE-AVX2 -fprotect-parens"
         - cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"
     cice5:
