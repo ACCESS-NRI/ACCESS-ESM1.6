@@ -13,84 +13,86 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.b0c3e51f6959c90d2a8d034fc4c54846f36ddfd4=access-esm1.6'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -no-ftz -no-daz"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        ## - '@git.b0c3e51f6959c90d2a8d034fc4c54846f36ddfd4=access-esm1.6' # This contains all the FP fixes with NOVECTOR
+        - '@git.9f575d8532579a0f717002c571e68037e79c7396=access-esm1.6' # This is the last commit before I branched off the FP fixes. From Dougie with the CMAKE fixes
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
     um7:
       require:
         - '@git.access-esm1.6-2025.06.000=access-esm1.6'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     # Intermediate-level dependencies
     gcom4:
       require:
         - '@git.0f17657a3b21cda9c0f3c403d99667e436062e38=access-esm1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
     oasis3-mct:
       require:
         - '@git.7036f26ece68c26083fec2fe96e3cb1faed7559d=access-esm1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'ldflags="-flto -fuse-ld=lld"'
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
     access-generic-tracers:
       require:
         - '@git.dev-2025.05.001'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     access-mocsy:
       require:
         - '@git.2017.12.0'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     # System-level packages
     openmpi:
       require:
         - '@4.1.5'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     netcdf-c:
       require:
         - '@4.7.4'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     netcdf-fortran:
       require:
         - '@4.5.2'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     hdf5:
       require:
         - '@1.10.11'
-        - 'fflags="-g3 -xCORE-AVX2 -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
-        - 'cflags="-g3 -xCORE-AVX2 -fprotect-parens"'
-        - 'cxxflags="-g3 -xCORE-AVX2 -fprotect-parens"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
 
     gcc-runtime:
       require:
@@ -104,7 +106,7 @@ spack:
     all:
       require:
       - '%oneapi@2025.0.4'
-      - target=x86_64_v3
+      - target=x86_64_v4
   view: true
   concretizer:
     unify: false
