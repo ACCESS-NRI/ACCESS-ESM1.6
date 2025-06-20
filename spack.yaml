@@ -38,10 +38,10 @@ spack:
     gcom4:
       require:
         - '@git.0f17657a3b21cda9c0f3c403d99667e436062e38=access-esm1.5'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        - 'ldflags="-flto -fuse-ld=lld"'
 
     oasis3-mct:
       require:
@@ -53,26 +53,26 @@ spack:
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        - 'ldflags="-flto -fuse-ld=lld"'
 
     access-generic-tracers:
       require:
         - '@git.dev-2025.05.001'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        - 'ldflags="-flto -fuse-ld=lld"'
 
     access-mocsy:
       require:
         - '@git.2017.12.0'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        - 'ldflags="-flto -fuse-ld=lld"'
 
     # System-level packages
     openmpi:
