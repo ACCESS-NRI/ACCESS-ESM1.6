@@ -15,10 +15,10 @@ spack:
       require:
         ## - '@git.b0c3e51f6959c90d2a8d034fc4c54846f36ddfd4=access-esm1.6' # This contains all the FP fixes with NOVECTOR
         - '@git.9f575d8532579a0f717002c571e68037e79c7396=access-esm1.6' # This is the last commit before I branched off the FP fixes. From Dougie with the CMAKE fixes
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        - 'ldflags="-flto -fuse-ld=lld"'
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
