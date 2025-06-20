@@ -29,10 +29,10 @@ spack:
     um7:
       require:
         - '@git.access-esm1.6-2025.06.000=access-esm1.6'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        - 'ldflags="-flto -fuse-ld=lld"'
 
     # Intermediate-level dependencies
     gcom4:
