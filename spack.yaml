@@ -67,7 +67,7 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/dev_2025.04.cice5'
-          cice5: '{name}/02bff0578ade8362e2fca729d450378be7149e8a-{hash:7}'
+          cice5: '{name}/5f3b8da81f42d61662bc55786fc75e0f8908df02-{hash:7}'
           um7: '{name}/access-esm1.6-2025.04.000-{hash:7}'
           mom5: '{name}/dev-2025.03.001-{hash:7}'
   config:
