@@ -82,26 +82,26 @@ spack:
     netcdf-c:
       require:
         - '@4.9.2'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
-        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-flto -fuse-ld=lld"'
+        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
+        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        # - 'ldflags="-flto -fuse-ld=lld"'
 
     netcdf-fortran:
       require:
         - '@4.6.1'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
-        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-flto -fuse-ld=lld"'
+        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
+        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        # - 'ldflags="-flto -fuse-ld=lld"'
 
     hdf5:
       require:
         - '@1.14.3'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
-        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-fuse-ld=lld"'
+        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
+        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        # - 'ldflags="-fuse-ld=lld"'
 
     gcc-runtime:
       require:
