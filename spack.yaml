@@ -44,7 +44,7 @@ spack:
 
     oasis3-mct:
       require:
-        - '@git.7036f26ece68c26083fec2fe96e3cb1faed7559d=access-esm1.5'
+        - '@git.99d22674df8f304eb29c216e50d39ad4c0f24c27=access-esm1.5'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
