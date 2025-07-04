@@ -48,14 +48,15 @@ spack:
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -O2 -flto"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -O2 -flto"'
-        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
 
     access-generic-tracers:
       require:
