@@ -48,7 +48,7 @@ spack:
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -O2 -qopt-prefetch -flto -fuse-ld=lld"'
 
     access-fms:
       require:
