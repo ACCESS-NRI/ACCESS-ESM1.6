@@ -38,8 +38,8 @@ The deployment process also creates a GitHub release with the same tag. All rele
 Additionally the deployment creates environment modulefiles, the [standard method for deploying software on `gadi`](https://opus.nci.org.au/display/Help/Environment+Modules). To view available ACCESS-ESM1.6 versions:
 
 ```bash
-module use /g/data/vk83/apps/spack/0.22/release/modules/linux-rocky8-x86_64
-module avail access-esm1.6
+module use /g/data/vk83/modules
+module avail access-esm1p6
 ```
 
 For users of ACCESS-ESM1.6 model configurations released by ACCESS-NRI the exact location of the ACCESS-ESM1.6 model executables is not required. Model configurations will be updated with new model components when necessary.
