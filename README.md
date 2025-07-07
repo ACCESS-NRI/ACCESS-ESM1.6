@@ -18,8 +18,8 @@ ACCESS-ESM1.6 is built and deployed automatically to `gadi` on NCI (see below). 
 Then clone this repository and run the following commands on `gadi`:
 
 ```bash
-spack env create access-esm1.6 spack.yaml
-spack env activate access-esm1.6
+spack env create access-esm1p6 spack.yaml
+spack env activate access-esm1p6
 spack install
 ```
 
