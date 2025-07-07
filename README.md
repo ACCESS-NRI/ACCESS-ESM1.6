@@ -43,5 +43,3 @@ module avail access-esm1.6
 ```
 
 For users of ACCESS-ESM1.6 model configurations released by ACCESS-NRI the exact location of the ACCESS-ESM1.6 model executables is not required. Model configurations will be updated with new model components when necessary.
-
-For information on contributing your own fixes to the ACCESS-ESM1.6 `spack.yaml`, see the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
