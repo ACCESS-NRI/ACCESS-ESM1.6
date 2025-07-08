@@ -70,7 +70,7 @@ spack:
 
     access-mocsy:
       require:
-        - '@git.2017.12.0=gtracers'
+        - '@git.1e4bc055519a6446232dcff803e7b80e56c49424=gtracers'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
