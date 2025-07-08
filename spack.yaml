@@ -103,7 +103,7 @@ spack:
     # Preferences for all packages
     all:
       require:
-      - '%oneapi@2025.0.4'
+      - '%oneapi@2025.02.000'
       - target=x86_64_v3
   view: true
   concretizer:
