@@ -19,7 +19,7 @@ Then clone this repository and run the following commands on `gadi`:
 
 ```bash
 spack env create access-esm1p6 spack.yaml
-spack env activate access-esm1p6
+spack env activate -p access-esm1p6
 spack install
 ```
 
