@@ -13,7 +13,6 @@ spack:
   packages:
     mom5:
       require:
-        ## - '@git.b0c3e51f6959c90d2a8d034fc4c54846f36ddfd4=access-esm1.6' # This contains all the FP fixes with NOVECTOR
         - '@git.9f575d8532579a0f717002c571e68037e79c7396=access-esm1.6' # This is the last commit before I branched off the FP fixes. From Dougie with the CMAKE fixes
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -unroll=0"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
@@ -45,7 +44,6 @@ spack:
 
     oasis3-mct:
       require:
-#        - '@git.99d22674df8f304eb29c216e50d39ad4c0f24c27=access-esm1.5'
         - '@git.access-esm1.5-2025.03.001=access-esm1.5'
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
@@ -84,26 +82,14 @@ spack:
     netcdf-c:
       require:
         - '@4.9.2'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-flto -fuse-ld=lld"'
 
     netcdf-fortran:
       require:
         - '@4.6.1'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-flto -fuse-ld=lld"'
 
     hdf5:
       require:
         - '@1.14.3'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback "'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-fuse-ld=lld"'
 
     gcc-runtime:
       require:
