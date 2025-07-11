@@ -14,10 +14,10 @@ spack:
     mom5:
       require:
         - '@git.9f575d8532579a0f717002c571e68037e79c7396=access-esm1.6' # This is the last commit before I branched off the FP fixes. From Dougie with the CMAKE fixes
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -unroll=0"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -unroll=0 -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
+        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -flto -fuse-ld=lld"'
 
     cice4:
       require:
