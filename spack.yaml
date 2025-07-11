@@ -23,7 +23,7 @@ spack:
         - '@git.4f49285d535eb8d889b2314c17f2d05bbf56647e=access-esm1.6'
     cable:
       require:
-        - '@git.25f0cd9f37b59be33cc1878f601ea30de943d085=access-esm1.6'
+        - '@git.41653d77ebff831139fd40ba6cc4d1fae56d4cb3=access-esm1.6'
         - '+library+mpi'
         - 'fflags="-V -i8 -r8 -ftz -what -fno-alias -stack-temps -safe-cray-ptr -O2 -fp-model precise"'
         - 'cflags="-xCORE-AVX512 -O2"'
