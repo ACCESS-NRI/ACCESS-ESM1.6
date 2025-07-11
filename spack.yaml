@@ -17,7 +17,7 @@ spack:
         - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
         - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -flto -fuse-ld=lld"'
+        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
 
     cice4:
       require:
