@@ -62,7 +62,7 @@ spack:
       tcl:
         include:
           - access-esm1p6
-          - cice5
+          - cice4
           - um7
           - mom5
         projections:
