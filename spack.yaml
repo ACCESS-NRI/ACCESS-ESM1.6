@@ -14,10 +14,7 @@ spack:
     mom5:
       require:
         - '@git.9f575d8532579a0f717002c571e68037e79c7396=access-esm1.6' # This is the last commit before I branched off the FP fixes. From Dougie with the CMAKE fixes
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -fpe3 -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
 
     cice4:
       require:
@@ -46,34 +43,22 @@ spack:
     oasis3-mct:
       require:
         - '@git.access-esm1.5-2025.03.001=access-esm1.5'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
 
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -O2 -flto"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -O2 -flto"'
-        # - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"
 
     access-generic-tracers:
       require:
         - '@git.dev-2025.05.001'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
 
     access-mocsy:
       require:
         - '@git.1e4bc055519a6446232dcff803e7b80e56c49424=gtracers'
-        # - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        # - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        # - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
 
     # System-level packages
     openmpi:
@@ -104,7 +89,7 @@ spack:
     all:
       require:
       - '%oneapi@2025.2.0'
-      - target=x86_64_v3
+      - target=x86_64_v4
   view: true
   concretizer:
     unify: false
