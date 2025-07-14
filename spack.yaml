@@ -48,7 +48,7 @@ spack:
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
 
     access-generic-tracers:
       require:
