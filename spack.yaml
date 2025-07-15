@@ -48,17 +48,17 @@ spack:
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
 
     access-generic-tracers:
       require:
         - '@git.dev-2025.05.001'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
 
     access-mocsy:
       require:
         - '@git.1e4bc055519a6446232dcff803e7b80e56c49424=gtracers'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
 
     # System-level packages
     openmpi:
