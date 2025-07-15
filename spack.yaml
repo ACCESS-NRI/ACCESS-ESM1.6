@@ -14,7 +14,7 @@ spack:
     mom5:
       require:
         - '@git.9f575d8532579a0f717002c571e68037e79c7396=access-esm1.6' # This is the last commit before I branched off the FP fixes. From Dougie with the CMAKE fixes
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids"'
 
     cice4:
       require:
@@ -43,22 +43,22 @@ spack:
     oasis3-mct:
       require:
         - '@git.access-esm1.5-2025.03.001=access-esm1.5'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids"'
 
     access-fms:
       require:
         - '@git.mom5-2025.05.000'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids"'
 
     access-generic-tracers:
       require:
         - '@git.dev-2025.05.001'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids"'
 
     access-mocsy:
       require:
         - '@git.1e4bc055519a6446232dcff803e7b80e56c49424=gtracers'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -traceback"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids"'
 
     # System-level packages
     openmpi:
