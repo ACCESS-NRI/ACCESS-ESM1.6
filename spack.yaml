@@ -20,26 +20,26 @@ spack:
     cice4:
       require:
         - '@git.access-esm1.6-2025.04.000=access-esm1.5'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'direct_ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto"'
+        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids"'
+        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids"'
+        - 'direct_ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
     um7:
       require:
         - '@git.access-esm1.6-2025.06.000=access-esm1.6'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto"'
+        - 'cflags="-march=cascadelake -mtune=sapphirerapids"'
+        - 'cxxflags="-march=cascadelake -mtune=sapphirerapids"'
+        - 'ldflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
 
     # Intermediate-level dependencies
     gcom4:
       require:
         - '@git.0f17657a3b21cda9c0f3c403d99667e436062e38=access-esm1.5'
-        - 'fflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens -assume nan_compares -assume ieee_compares -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto"'
-        - 'cflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'cxxflags="-g3 -march=cascadelake -mtune=sapphirerapids -fprotect-parens"'
-        - 'ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -traceback -qopt-zmm-usage=high -qvec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto"'
+        - 'cflags="-march=cascadelake -mtune=sapphirerapids"'
+        - 'cxxflags="-march=cascadelake -mtune=sapphirerapids"'
+        - 'ldflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
 
     oasis3-mct:
       require:
