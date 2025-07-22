@@ -32,13 +32,13 @@ spack:
         - '@4.1.5'
     netcdf-c:
       require:
-        - '@4.7.4'
+        - '@4.9.2'
     netcdf-fortran:
       require:
-        - '@4.5.2'
+        - '@4.6.1'
     hdf5:
       require:
-        - '@1.10.11'
+        - '@1.14.3'
     access-fms:
       require:
         - '@git.mom5-2025.04.001'
