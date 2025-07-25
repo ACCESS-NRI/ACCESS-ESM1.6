@@ -43,10 +43,10 @@ spack:
         - '@git.mom5-2025.05.000=mom5'
     access-generic-tracers:
       require:
-        - '@git.dev-2025.05.001=development'
+        - '@git.2025.07.000=master'
     access-mocsy:
       require:
-        - '@git.2025.07.001=gtracers'
+        - '@git.2025.07.002=gtracers'
 
     # Preferences for all packages
     all:
