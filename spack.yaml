@@ -29,7 +29,7 @@ spack:
         - '@git.access-esm1.5-2025.03.001=access-esm1.5'
     openmpi:
       require:
-        - '@4.1.5'
+        - '@5.0.5'
     netcdf-c:
       require:
         - '@4.9.2'
