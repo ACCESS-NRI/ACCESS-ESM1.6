@@ -6,7 +6,7 @@
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
 # - MOM5 from development branch
-# - CICE4 from ESM1.5 and change to CICE5 once CICE5 SPR has been updated.
+# - CICE5 from ESM1.5 branch
 spack:
   specs:
     - access-esm1p6@git.dev_2025.06.000 cice=5
