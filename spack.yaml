@@ -26,7 +26,7 @@ spack:
         - 'direct_ldflags="-g3 -march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto -fuse-ld=lld"'
     um7:
       require:
-        - '@git.access-esm1.6-2025.06.000=access-esm1.6'
+        - '@git.7ed9865cc55a631da5bdafa451bb4cae09569197=access-esm1.6' # This contains the !CDIR -> !DIR$ compiler directive fix
         - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high -vec-threshold0 -O2 -qopt-prefetch -flto"'
         - 'cflags="-march=cascadelake -mtune=sapphirerapids"'
         - 'cxxflags="-march=cascadelake -mtune=sapphirerapids"'
