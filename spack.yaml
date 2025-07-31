@@ -5,7 +5,7 @@
 #
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
-# - MOM5 from development branch
+# - MOM5 from master branch with access-generic-tracers (wombatlite) as a library
 # - CICE5 from ESM1.6 branch
 spack:
   specs:
