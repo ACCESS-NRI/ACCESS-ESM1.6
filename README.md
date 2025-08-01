@@ -18,8 +18,8 @@ ACCESS-ESM1.6 is built and deployed automatically to `gadi` on NCI (see below). 
 Then clone this repository and run the following commands on `gadi`:
 
 ```bash
-spack env create access-esm1.6 spack.yaml
-spack env activate access-esm1.6
+spack env create access-esm1p6 spack.yaml
+spack env activate -p access-esm1p6
 spack install
 ```
 
@@ -38,10 +38,8 @@ The deployment process also creates a GitHub release with the same tag. All rele
 Additionally the deployment creates environment modulefiles, the [standard method for deploying software on `gadi`](https://opus.nci.org.au/display/Help/Environment+Modules). To view available ACCESS-ESM1.6 versions:
 
 ```bash
-module use /g/data/vk83/apps/spack/0.22/release/modules/linux-rocky8-x86_64
-module avail access-esm1.6
+module use /g/data/vk83/modules
+module avail access-esm1p6
 ```
 
 For users of ACCESS-ESM1.6 model configurations released by ACCESS-NRI the exact location of the ACCESS-ESM1.6 model executables is not required. Model configurations will be updated with new model components when necessary.
-
-For information on contributing your own fixes to the ACCESS-ESM1.6 `spack.yaml`, see the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
