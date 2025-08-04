@@ -68,7 +68,7 @@ spack:
     # System-level packages
     openmpi:
       require:
-        - '@4.1.5'
+        - '@5.0.8'
 
     netcdf-c:
       require:
