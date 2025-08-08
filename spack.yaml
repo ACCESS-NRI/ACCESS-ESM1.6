@@ -48,6 +48,14 @@ spack:
       require:
         - '@git.2025.07.002=gtracers'
 
+    gcc-runtime:
+      require:
+        - '%gcc'
+
+    glibc:
+      require:
+        - '%gcc'
+
     # Preferences for all packages
     all:
       require:
