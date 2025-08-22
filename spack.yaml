@@ -13,7 +13,7 @@ spack:
   packages:
     mom5:
       require:
-        - '@git.6eb68a0be72d9ed8a47a62cb421d2e3a41ff5c67=access-esm1.6'
+        - '@git.13fc7b1179ae818ac5ddef2fc17420bd38f6a298=access-esm1.6'
         - '+access-gtracers'
     cice5:
       require:
@@ -41,7 +41,7 @@ spack:
         - '@1.10.11'
     access-fms:
       require:
-        - '@git.c36bbe752851a8d3b500227dc83284fa9e3d0dfe'
+        - '@git.0024cc1fc5615897d2bd32268f3cef76bc6d72dd'
     access-generic-tracers:
       require:
         - '@git.dev-2025.04.001'
@@ -69,7 +69,7 @@ spack:
           access-esm1p6: '{name}/dev_2025.06.000'
           cice5: '{name}/77d4785d0bc6f6eb8ed8450c7f636e3074f5b6ad-{hash:7}'
           um7: '{name}/743fc2e2f480fe2b0eddda3c3e30655c95b71bd8-{hash:7}'
-          mom5: '{name}/6eb68a0be72d9ed8a47a62cb421d2e3a41ff5c67-{hash:7}'
+          mom5: '{name}/13fc7b1179ae818ac5ddef2fc17420bd38f6a298-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
