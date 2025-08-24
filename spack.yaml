@@ -9,7 +9,7 @@
 # - CICE5 from ESM1.6 branch
 spack:
   specs:
-    - access-esm1p6@git.2025.07.000 cice=5
+    - access-esm1p6@latest cice=5
   packages:
     mom5:
       require:
@@ -28,7 +28,7 @@ spack:
         - '@git.access-esm1.5-2025.03.001=access-esm1.5'
     openmpi:
       require:
-        - '@4.1.5'
+        - '@5.0.5'
     netcdf-c:
       require:
         - '@4.9.2'
@@ -51,7 +51,7 @@ spack:
     # Preferences for all packages
     all:
       require:
-        - '%intel@2021.10.0'
+        - '%oneapi@2025.2.0'
         - 'target=x86_64_v4'
   view: true
   concretizer:
@@ -65,7 +65,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/2025.07.000'
+          access-esm1p6: '{name}/latest'
           cice5: '{name}/access-esm1.6-2025.07.001-{hash:7}'
           um7: '{name}/access-esm1.6-2025.06.000-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
