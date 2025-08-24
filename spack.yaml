@@ -47,6 +47,12 @@ spack:
     access-mocsy:
       require:
         - '@2025.07.002'
+    gcc-runtime:
+      require:
+        - '%gcc'
+    glibc:
+      require:
+        - '%gcc'
 
     # Preferences for all packages
     all:
