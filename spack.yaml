@@ -46,7 +46,7 @@ spack:
         - '@git.2025.04.001=main'
     access-mocsy:
       require:
-        - '@git.2025.07.002=gtracers'
+        - '@2025.07.002'
 
     # Preferences for all packages
     all:
