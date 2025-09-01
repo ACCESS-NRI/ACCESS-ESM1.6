@@ -25,7 +25,7 @@ spack:
         - '@git.0f17657a3b21cda9c0f3c403d99667e436062e38=access-esm1.5'
     oasis3-mct:
       require:
-        - '@git.access-esm1.5-2025.03.001=access-esm1.5'
+        - '@upstream'
     openmpi:
       require:
         - '@5.0.8'
