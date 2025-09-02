@@ -43,7 +43,7 @@ spack:
         - '@git.mom5-2025.05.000=mom5'
     access-generic-tracers:
       require:
-        - '@2025.07.001'
+        - '@2025.08.000'
     access-mocsy:
       require:
         - '@2025.07.002'
