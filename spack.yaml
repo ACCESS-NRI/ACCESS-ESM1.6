@@ -52,6 +52,7 @@ spack:
         - '%gcc'
     glibc:
       require:
+        - '@2.39'
         - '%gcc'
 
     # Preferences for all packages
