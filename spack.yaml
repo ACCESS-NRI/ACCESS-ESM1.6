@@ -16,7 +16,7 @@ spack:
         - '@git.2025.05.000=access-esm1.6'
     cice5:
       require:
-        - '@git.93e4b100419a8ef9df11c57eae6c0b3bff9edb72=access-esm1.6'
+        - '@git.access-esm1.6-2025.07.001=access-esm1.6'
     um7:
       require:
         - '@git.24e6fb75d734a635df7c96c17a04b61e8fc62b17=access-esm1.6'
@@ -40,7 +40,7 @@ spack:
         - '@1.14.3'
     access-fms:
       require:
-        - '@git.bf5f05bbf817b0168773fb2737e9d707c989fb43=mom5'
+        - '@git.mom5-2025.08.000=mom5'
     access-generic-tracers:
       require:
         - '@2025.09.000'
@@ -72,15 +72,9 @@ spack:
           - um7
           - mom5
         projections:
-<<<<<<< HEAD
-          access-esm1p6: '{name}/2025.07.000'
-          cice5: '{name}/93e4b100419a8ef9df11c57eae6c0b3bff9edb72-{hash:7}'
-          um7: '{name}/24e6fb75d734a635df7c96c17a04b61e8fc62b17-{hash:7}'
-=======
           access-esm1p6: '{name}/2025.09.001'
           cice5: '{name}/access-esm1.6-2025.07.001-{hash:7}'
-          um7: '{name}/access-esm1.6-2025.06.000-{hash:7}'
->>>>>>> origin/main
+          um7: '{name}/24e6fb75d734a635df7c96c17a04b61e8fc62b17-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
   config:
     install_tree:
