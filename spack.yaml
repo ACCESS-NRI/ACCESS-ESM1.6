@@ -40,7 +40,7 @@ spack:
         - '@1.14.3'
     access-fms:
       require:
-        - '@git.mom5-2025.05.000=mom5'
+        - '@git.mom5-2025.08.000=mom5'
     access-generic-tracers:
       require:
         - '@2025.09.000'
