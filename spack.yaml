@@ -19,7 +19,7 @@ spack:
         - '@git.access-esm1.6-2025.09.000=access-esm1.6'
     um7:
       require:
-        - '@git.5db1f4ea2d87a179e610cafadeaf03bcc77c6b15=access-esm1.6'
+        - '@git.aa023ddbf7662ed592a8ff8c28b8014b4a0cd882=access-esm1.6'
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
@@ -74,7 +74,7 @@ spack:
         projections:
           access-esm1p6: '{name}/2025.09.002'
           cice5: '{name}/access-esm1.6-2025.09.000-{hash:7}'
-          um7: '{name}/5db1f4ea2d87a179e610cafadeaf03bcc77c6b15-{hash:7}'
+          um7: '{name}/aa023ddbf7662ed592a8ff8c28b8014b4a0cd882-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
   config:
     install_tree:
