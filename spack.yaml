@@ -19,7 +19,7 @@ spack:
         - '@git.access-esm1.6-2025.09.000=access-esm1.6'
     um7:
       require:
-        - '@git.access-esm1.6-2025.09.000=access-esm1.6'
+        - '@git.06a831a4e82d41f01fee228de0198d1f8f87a736=access-esm1.6'
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
