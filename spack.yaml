@@ -16,7 +16,7 @@ spack:
         - '@git.2025.05.000=access-esm1.6'
     cice5:
       require:
-        - '@git.acbecafd44ea60785b10371e039e95c775ffb49c=access-esm1.6'
+        - '@git.6781f6265616584af3223ae2b07ed42963bb2e71=access-esm1.6'
     um7:
       require:
         - '@git.access-esm1.6-2025.09.000=access-esm1.6'
