@@ -28,7 +28,7 @@ spack:
         - '@git.2025.03.001'
     openmpi:
       require:
-        - '@5.0.5'
+        - '@5.0.8'
     netcdf-c:
       require:
         - '@4.9.2'
@@ -59,7 +59,7 @@ spack:
     all:
       require:
         - '%oneapi@2025.2.0'
-        - 'target=x86_64_v4'
+        - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: true
