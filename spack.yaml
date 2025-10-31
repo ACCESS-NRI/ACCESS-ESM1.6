@@ -78,7 +78,7 @@ spack:
         projections:
           access-esm1p6: '{name}/2025.10.001'
           cice5: '{name}/access-esm1.6-2025.09.000-{hash:7}'
-          um7: '{name}/5e403e843ecd34824074c48b9faa16ba6235da25-{hash:7}'
+          um7: '{name}/4c645f0c0b927121f9a8445de64cdc52187f26f1-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
   config:
     install_tree:
