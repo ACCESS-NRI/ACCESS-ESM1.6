@@ -19,10 +19,10 @@ spack:
         - '@git.access-esm1.6-2025.09.000=access-esm1.6'
     um7:
       require:
-        - '@git.5e403e843ecd34824074c48b9faa16ba6235da25=access-esm1.6'
+        - '@git.4c645f0c0b927121f9a8445de64cdc52187f26f1=access-esm1.6'
     cable:
       require:
-        - '@git.b5c191d84170fe4b020bdfc4a087956772c3d8c5=access-esm1.6'
+        - '@git.d9db66da0ca8cee5c9449000b9d8d36001da449a=access-esm1.6'
       variants: library=ESM1.6
     gcom4:
       require:
