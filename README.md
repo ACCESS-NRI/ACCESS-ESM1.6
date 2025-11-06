@@ -23,7 +23,7 @@ spack env activate -p access-esm1p6
 spack install
 ```
 
-to create a spack environment called `access-esm1.6` and build all the ACCESS-ESM1.6 components, the locations of which can be found using `spack find --paths`.
+to create a spack environment called `access-esm1p6` and build all the ACCESS-ESM1.6 components, the locations of which can be found using `spack find --paths`.
 
 ### Deployment
 
