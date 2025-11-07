@@ -22,8 +22,7 @@ spack:
         - '@git.2025.11.000=access-esm1.6'
     cable:
       require:
-        - '@git.2025.11.000'
-      variants: library=access-esm1.6
+        - '@2025.11.000 library=access-esm1.6'
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
