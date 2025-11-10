@@ -1,5 +1,5 @@
 {
     "$schema": "https://github.com/ACCESS-NRI/schema/blob/main/au.org.access-nri/model/deployment/config/versions/3-0-0.json",
     "spack": "0.22",
-    "spack-packages": "f7ff18261e8026015d200549dd7c0c2472dbd8e9"
+    "spack-packages": "2025.11.001"
 }
