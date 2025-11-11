@@ -20,6 +20,7 @@ spack:
     um7:
       require:
         - '@git.4c4e2dcf296f22e84eb82d551fdcc997f608096b=access-esm1.6'
+        - 'fflags="-diag-error=6956"'
     cable:
       require:
         - '@git.d9db66da0ca8cee5c9449000b9d8d36001da449a=access-esm1.6'
