@@ -9,7 +9,7 @@
 # - CICE5 from ESM1.6 branch
 spack:
   specs:
-    - access-esm1p6@git.2025.10.000 cice=5
+    - access-esm1p6@git.2025.11.000 cice=5
   packages:
     mom5:
       require:
@@ -19,7 +19,11 @@ spack:
         - '@git.access-esm1.6-2025.09.000=access-esm1.6'
     um7:
       require:
-        - '@git.access-esm1.6-2025.10.000=access-esm1.6'
+        - '@git.2025.11.000=access-esm1.6'
+    cable:
+      require:
+        - '@2025.11.000'
+        - library=access-esm1.6
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
@@ -72,9 +76,9 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/2025.10.000'
+          access-esm1p6: '{name}/2025.11.000'
           cice5: '{name}/access-esm1.6-2025.09.000-{hash:7}'
-          um7: '{name}/access-esm1.6-2025.10.000-{hash:7}'
+          um7: '{name}/2025.11.000-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
   config:
     install_tree:
