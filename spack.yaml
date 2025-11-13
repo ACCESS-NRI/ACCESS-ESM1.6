@@ -9,14 +9,14 @@
 # - CICE5 from ESM1.6 branch
 spack:
   specs:
-    - access-esm1p6@git.2025.11.000 cice=5
+    - access-esm1p6@git.2025.11.001 cice=5
   packages:
     mom5:
       require:
         - '@git.2025.05.000=access-esm1.6'
     cice5:
       require:
-        - '@git.access-esm1.6-2025.09.000=access-esm1.6'
+        - '@git.access-esm1.6-2025.11.000=access-esm1.6'
     um7:
       require:
         - '@git.48e21dfd3a312c2f2f8c24e7926ce5e1ca4a245d=access-esm1.6'
@@ -77,7 +77,7 @@ spack:
           - mom5
         projections:
           access-esm1p6: '{name}/2025.11.000'
-          cice5: '{name}/access-esm1.6-2025.09.000-{hash:7}'
+          cice5: '{name}/access-esm1.6-2025.11.000-{hash:7}'
           um7: '{name}/48e21dfd3a312c2f2f8c24e7926ce5e1ca4a245d-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
   config:
