@@ -20,7 +20,7 @@ jobs:
   pr-ci:
     name: CI
     if: github.event.action != 'closed'
-    uses: access-nri/build-cd/.github/workflows/ci.yml@v7
+    uses: access-nri/build-cd/.github/workflows/ci.yml@v8
     with:
       model: ${{ vars.NAME }}
       root-sbd: access-esm1p6
@@ -36,7 +36,7 @@ jobs:
   pr-closed:
     name: Closed
     if: github.event.action == 'closed'
-    uses: access-nri/build-cd/.github/workflows/ci-closed.yml@v7
+    uses: access-nri/build-cd/.github/workflows/ci-closed.yml@v8
     with:
       root-sbd: access-esm1p6
     secrets: inherit
