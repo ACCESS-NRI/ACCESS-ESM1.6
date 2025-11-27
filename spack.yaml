@@ -26,7 +26,7 @@ spack:
         - library=access-esm1.6
     gcom4:
       require:
-        - '@git.bfb72242dd78936ca6aa117eb32cc99dc3b9eb78=access-esm1.5'
+        - '@git.2025.08.000=access-esm1.5'
     oasis3-mct:
       require:
         - '@git.2025.03.001'
