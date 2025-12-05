@@ -8,8 +8,12 @@
 # - MOM5 from master branch with access-generic-tracers (wombatlite) as a library
 # - CICE5
 spack:
+  definitions:
+  # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
+  - _name: [access-esm1p6]
+  - _version: [2026.02.000]
   specs:
-  - access-esm1p6@git.2026.02.000 cice=5
+  - access-esm1p6 cice=5
   packages:
     # Coupler
     oasis3-mct:
