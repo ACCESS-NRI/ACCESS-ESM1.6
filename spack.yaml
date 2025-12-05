@@ -8,62 +8,71 @@
 # - MOM5 from master branch with access-generic-tracers (wombatlite) as a library
 # - CICE5 from ESM1.6 branch
 spack:
+  definitions:
+  # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
+  - _name: [access-esm1p6]
+  - _version: [2025.11.002]
   specs:
-    - access-esm1p6@git.2025.11.002 cice=5
+  - access-esm1p6 cice=5
   packages:
     mom5:
       require:
-        - '@git.2025.05.000=access-esm1.6'
+      - '@git.2025.05.000=access-esm1.6'
     cice5:
       require:
-        - '@git.access-esm1.6-2025.11.001=access-esm1.6'
+      - '@git.access-esm1.6-2025.11.001=access-esm1.6'
     um7:
       require:
-        - '@git.2025.11.000=access-esm1.6'
+      - '@git.2025.11.000=access-esm1.6'
     cable:
       require:
-        - '@2025.11.000'
-        - library=access-esm1.6
+      - '@2025.11.000'
+      - library=access-esm1.6
     gcom4:
       require:
-        - '@git.2025.08.000=access-esm1.5'
+      - '@git.2025.08.000=access-esm1.5'
     oasis3-mct:
       require:
-        - '@git.2025.03.001'
+      - '@git.2025.03.001'
     openmpi:
       require:
-        - '@5.0.8'
+      - '@5.0.8'
     netcdf-c:
       require:
-        - '@4.9.2'
+      - '@4.9.2'
     netcdf-fortran:
       require:
-        - '@4.6.1'
+      - '@4.6.1'
     hdf5:
       require:
-        - '@1.14.3'
+      - '@1.14.3'
     access-fms:
       require:
-        - '@git.mom5-2025.08.000=mom5'
+      - '@git.mom5-2025.08.000=mom5'
     access-generic-tracers:
       require:
-        - '@2025.09.000'
+      - '@2025.09.000'
     access-mocsy:
       require:
-        - '@2025.07.002'
+      - '@2025.07.002'
     gcc-runtime:
       require:
-        - '%gcc'
+      - '%access_gcc'
     glibc:
       require:
-        - '@2.28'
-        - '%gcc'
+      - '@2.28'
+      - '%access_gcc'
+
+    # Compilers
+    intel-oneapi-compilers:
+      require:
+      - '@2025.2.0'
 
     # Preferences for all packages
     all:
       require:
-        - '%oneapi@2025.2.0'
-        - 'target=x86_64_v4'
+      - '%access_oneapi'
+      - 'target=x86_64_v4'
   view: true
   concretizer:
     unify: true
@@ -71,18 +80,12 @@ spack:
     default:
       tcl:
         include:
-          - access-esm1p6
-          - cice5
-          - um7
-          - mom5
+        - access-esm1p6
+        - cice5
+        - um7
+        - mom5
         projections:
           access-esm1p6: '{name}/2025.11.002'
           cice5: '{name}/access-esm1.6-2025.11.001-{hash:7}'
           um7: '{name}/2025.11.000-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
-  config:
-    install_tree:
-      root: $spack/../restricted/ukmo/release
-    source_cache: $spack/../restricted/ukmo/source_cache
-    build_stage:
-    - $TMPDIR/restricted/spack-stage
