@@ -65,16 +65,21 @@ spack:
     # System dependencies
     gcc-runtime:
       require:
-      - '%gcc'
+      - '%access_gcc'
     glibc:
       require:
       - '@2.28'
-      - '%gcc'
+      - '%access_gcc'
+
+    # Compilers
+    intel-oneapi-compilers:
+      require:
+      - '@2025.2.0'
 
     # Preferences for all packages
     all:
       require:
-      - '%oneapi@2025.2.0'
+      - '%access_oneapi'
       - 'target=x86_64_v4'
   view: true
   concretizer:
