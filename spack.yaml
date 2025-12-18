@@ -51,6 +51,7 @@ spack:
     access-fms:
       require:
         - '@git.mom5-2025.08.000=mom5'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     access-generic-tracers:
       require:
         - '@2025.09.000'
