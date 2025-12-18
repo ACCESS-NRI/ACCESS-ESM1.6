@@ -14,22 +14,28 @@ spack:
     mom5:
       require:
         - '@git.2025.05.000=access-esm1.6'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     cice5:
       require:
         - '@git.access-esm1.6-2025.11.001=access-esm1.6'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     um7:
       require:
         - '@git.8ce16769e05eda1d99ea681e7d5a6eba79ee4468=access-esm1.6'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     cable:
       require:
         - '@2025.11.000'
         - library=access-esm1.6
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high"'
     oasis3-mct:
       require:
         - '@OASIS3-MCT_5.2'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high"'
     openmpi:
       require:
         - '@5.0.8'
@@ -48,9 +54,11 @@ spack:
     access-generic-tracers:
       require:
         - '@2025.09.000'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     access-mocsy:
       require:
         - '@2025.07.002'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     gcc-runtime:
       require:
         - '%gcc'
