@@ -18,7 +18,7 @@ spack:
         - '@git.2025.05.000=access-esm1.6'
     cice5:
       require:
-      - '@git.access-esm1.6-2025.09.000=access-esm1.6 build_system=cmake nxglob=360 nyglob=300 blcky=300 mxblcks=1'
+      - '@git.master-esm1.6-merge=access-esm1.6 build_system=cmake nxglob=360 nyglob=300 blcky=300 mxblcks=1'
     um7:
       require:
         - '@git.2025.11.000=access-esm1.6'
