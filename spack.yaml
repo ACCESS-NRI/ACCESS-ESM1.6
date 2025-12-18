@@ -21,7 +21,7 @@ spack:
         - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     um7:
       require:
-        - '@git.8ce16769e05eda1d99ea681e7d5a6eba79ee4468=access-esm1.6'
+        - '@git.78d12309e350e79827b5caac7c899f297a31054f=access-esm1.6'
         - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     cable:
       require:
