@@ -31,11 +31,11 @@ spack:
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
-        - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     oasis3-mct:
       require:
         - '@OASIS3-MCT_5.2'
-        - 'fflags="-march=cascadelake -mtune=sapphirerapids -qopt-zmm-usage=high"'
+        - 'fflags="-march=cascadelake -mtune=sapphirerapids -unroll"'
     openmpi:
       require:
         - '@5.0.8'
