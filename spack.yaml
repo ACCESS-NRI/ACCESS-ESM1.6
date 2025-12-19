@@ -9,7 +9,7 @@
 # - CICE5 from ESM1.6 branch
 spack:
   specs:
-    - access-esm1p6@git.2025.11.002 cice=5
+    - access-esm1p6@git.2025.12.001 cice=5
   packages:
     mom5:
       require:
@@ -21,7 +21,7 @@ spack:
         - 'fflags="-mtune=sapphirerapids -unroll"'
     um7:
       require:
-        - '@git.78d12309e350e79827b5caac7c899f297a31054f=access-esm1.6'
+        - '@git.2025.12.000=access-esm1.6
         - 'fflags="-mtune=sapphirerapids -unroll"'
     cable:
       require:
@@ -85,7 +85,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p6: '{name}/2025.11.002'
+          access-esm1p6: '{name}/2025.12.001'
           cice5: '{name}/access-esm1.6-2025.11.001-{hash:7}'
           um7: '{name}/2025.11.000-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
