@@ -19,7 +19,7 @@ spack:
         - '@git.access-esm1.6-2025.11.001=access-esm1.6'
     um7:
       require:
-        - '@git.2025.11.000=access-esm1.6'
+        - '@git.2025.12.000=access-esm1.6'
     cable:
       require:
         - '@2025.11.000'
@@ -78,7 +78,7 @@ spack:
         projections:
           access-esm1p6: '{name}/2025.11.002'
           cice5: '{name}/access-esm1.6-2025.11.001-{hash:7}'
-          um7: '{name}/2025.11.000-{hash:7}'
+          um7: '{name}/2025.12.000-{hash:7}'
           mom5: '{name}/2025.05.000-{hash:7}'
   config:
     install_tree:
