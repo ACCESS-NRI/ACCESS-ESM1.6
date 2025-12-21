@@ -33,6 +33,10 @@ spack:
     openmpi:
       require:
         - '@5.0.8'
+        # This is needed in Spack v1.1 because openmpi is an external on Gadi
+        # https://github.com/spack/spack/pull/51118
+        # https://spack.readthedocs.io/en/latest/packages_yaml.html#specifying-dependencies-among-external-packages
+        - '%oneapi@2025.2.0'
     netcdf-c:
       require:
         - '@4.9.2'
@@ -51,18 +55,23 @@ spack:
     access-mocsy:
       require:
         - '@2025.07.002'
+    gcc:
+      require:
+        - '@8.5.0'
     gcc-runtime:
       require:
-        - '%gcc'
+        - '%access_gcc'
     glibc:
       require:
         - '@2.28'
-        - '%gcc'
-
+        - '%access_gcc'
+    intel-oneapi-compilers:
+      require:
+        - '@2025.2.0'
     # Preferences for all packages
     all:
       require:
-        - '%oneapi@2025.2.0'
+        - '%access_oneapi'
         - 'target=x86_64_v4'
   view: true
   concretizer:
@@ -86,3 +95,6 @@ spack:
     source_cache: $spack/../restricted/ukmo/source_cache
     build_stage:
     - $TMPDIR/restricted/spack-stage
+  upstreams:
+    unrestricted:
+      install_tree: $spack/../release
