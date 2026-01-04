@@ -4,9 +4,13 @@
     "cice5",
     "um7",
     "mom5",
-    "oasis3-mct"
+    "oasis3-mct",
+    "cable",
+    "gcom4",
+    "access-fms",
+    "access-generic-tracers",
+    "access-mocsy"
   ],
   "injection": [
-    "openmpi"
   ]
 }
