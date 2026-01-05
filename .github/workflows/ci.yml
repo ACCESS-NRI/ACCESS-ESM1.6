@@ -25,8 +25,8 @@ jobs:
       model: ${{ vars.NAME }}
       root-sbd: access-esm1p6
       pr: ${{ github.event.pull_request.number }}
-      spack-manifest-schema-version: 1-0-7
-      config-versions-schema-version: 3-0-0
+      spack-manifest-schema-version: 2-0-0
+      config-versions-schema-version: 4-0-0
       config-packages-schema-version: 1-0-0
     permissions:
       pull-requests: write
