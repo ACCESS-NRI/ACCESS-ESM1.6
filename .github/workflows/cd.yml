@@ -10,7 +10,7 @@ on:
 jobs:
   cd:
     name: CD
-    uses: access-nri/build-cd/.github/workflows/cd.yml@v6
+    uses: access-nri/build-cd/.github/workflows/cd.yml@v7
     with:
       model: ${{ vars.NAME }}
       root-sbd: access-esm1p6
