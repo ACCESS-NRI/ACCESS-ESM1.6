@@ -22,6 +22,7 @@ jobs:
     if: github.event.action != 'closed'
     uses: access-nri/build-cd/.github/workflows/ci.yml@v7
     with:
+      model: ${{ vars.NAME }}
       pr: ${{ github.event.pull_request.number }}
       spack-manifest-schema-version: 1-0-7
       config-versions-schema-version: 3-0-0

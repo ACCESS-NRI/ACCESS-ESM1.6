@@ -12,9 +12,9 @@ jobs:
     with:
       model: ${{ vars.NAME }}
       pr: ${{ github.event.issue.number }}
-      spack-manifest-schema-version: null
-      config-versions-schema-version: null
-      config-packages-schema-version: null
+      spack-manifest-schema-version: 1-0-7
+      config-versions-schema-version: 3-0-0
+      config-packages-schema-version: 1-0-0
       root-sbd: access-esm1p6
     permissions:
       pull-requests: write
@@ -35,7 +35,7 @@ jobs:
   configs:
     name: Configs
     if: startsWith(github.event.comment.body, '!update-configs') && github.event.issue.pull_request
-    uses: access-nri/build-cd/.github/workflows/ci-comment-configs.yml@v7
+    uses: access-nri/build-cd/.github/workflows/ci-command-configs.yml@v7
     with:
       model: ${{ vars.NAME }}
       auto-configs-pr-schema-version: 1-0-0
