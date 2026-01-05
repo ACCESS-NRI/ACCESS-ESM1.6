@@ -3,17 +3,27 @@
   "profiles": {
 
     "default": {
-      "configs_repo": "ACCESS-NRI/YOUR_CONFIG_REPO_HERE",
+      "configs_repo": "ACCESS-NRI/access-esm1.6-configs",
       "configs": {
-        "dev-YOUR_CONFIG_HERE": {
+        "dev-preindustrial+concentrations": {
           "checks": {
             "repro": true
           }
-        }
-      },
-      "dev-YOUR_OTHER_CONFIG_HERE": {
-        "checks": {
-          "repro": false
+        },
+        "dev-4xCO2+concentrations": {
+          "checks": {
+            "repro": true
+          }
+        },
+        "dev-1pctCO2": {
+          "checks": {
+            "repro": true
+          }
+        },
+        "dev-historical+concentrations": {
+          "checks": {
+            "repro": true
+          }
         }
       }
     }
