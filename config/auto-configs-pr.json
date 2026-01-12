@@ -9,24 +9,8 @@
           "checks": {
             "repro": true
           }
-        },
-        "dev-4xCO2+concentrations": {
-          "checks": {
-            "repro": true
-          }
-        },
-        "dev-1pctCO2": {
-          "checks": {
-            "repro": true
-          }
-        },
-        "dev-historical+concentrations": {
-          "checks": {
-            "repro": true
-          }
         }
       }
     }
-
   }
 }
