@@ -11,11 +11,9 @@ jobs:
     uses: access-nri/build-cd/.github/workflows/ci.yml@v8
     with:
       model: ${{ vars.NAME }}
-      pr: ${{ github.event.issue.number }}
       spack-manifest-schema-version: 2-0-0
       config-versions-schema-version: 4-0-0
       config-packages-schema-version: 1-0-0
-      root-sbd: access-esm1p6
     permissions:
       pull-requests: write
       contents: write
@@ -27,7 +25,6 @@ jobs:
     uses: access-nri/build-cd/.github/workflows/ci-comment.yml@v8
     with:
       model: ${{ vars.NAME }}
-      root-sbd: access-esm1p6
     permissions:
       pull-requests: write
       contents: write
@@ -39,7 +36,6 @@ jobs:
     with:
       model: ${{ vars.NAME }}
       auto-configs-pr-schema-version: 1-0-0
-      root-sbd: access-esm1p6
     permissions:
       pull-requests: write
     secrets:
