@@ -11,9 +11,11 @@ spack:
   specs:
     - access-esm1p6@git.2025.12.001 cice=5
   packages:
-    mom5:
+    # Coupler
+    oasis3-mct:
       require:
-        - '@git.2025.05.000=access-esm1.6'
+        - '@OASIS3-MCT_5.2'
+    # Major components
     cice5:
       require:
         - '@git.access-esm1.6-2025.11.001=access-esm1.6'
@@ -24,12 +26,25 @@ spack:
       require:
         - '@2025.11.000'
         - library=access-esm1.6
+    mom5:
+      require:
+        - '@git.2025.05.000=access-esm1.6'
+    # Model dependencies
+    # MOM5
+    access-fms:
+      require:
+        - '@git.mom5-2025.08.000=mom5'
+    access-generic-tracers:
+      require:
+        - '@2025.09.000'
+    access-mocsy:
+      require:
+        - '@2025.07.002'
+    # UM7
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
-    oasis3-mct:
-      require:
-        - '@OASIS3-MCT_5.2'
+    # Shared dependencies
     openmpi:
       require:
         - '@5.0.8'
@@ -42,15 +57,7 @@ spack:
     hdf5:
       require:
         - '@1.14.3'
-    access-fms:
-      require:
-        - '@git.mom5-2025.08.000=mom5'
-    access-generic-tracers:
-      require:
-        - '@2025.09.000'
-    access-mocsy:
-      require:
-        - '@2025.07.002'
+    # System dependencies
     gcc-runtime:
       require:
         - '%gcc'
