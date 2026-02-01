@@ -14,7 +14,7 @@ spack:
     # Coupler
     oasis3-mct:
       require:
-        - '@5.2'
+        - '@git.2025.03.001'
     # Major components
     cice5:
       require:
