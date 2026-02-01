@@ -6,7 +6,7 @@
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
 # - MOM5 from master branch with access-generic-tracers (wombatlite) as a library
-# - CICE5 from ESM1.6 branch
+# - CICE5
 spack:
   specs:
     - access-esm1p6@git.2026.01.000 cice=5
@@ -19,6 +19,7 @@ spack:
     cice5:
       require:
         - '@2026.01.000'
+        - 'nxglob=360 nyglob=300 blckx=36 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
         - '@git.2025.12.000=access-esm1.6'
