@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/deployment/config/auto-configs-pr/1-0-0.json",
+  "profiles": {
+
+    "default": {
+      "configs_repo": "ACCESS-NRI/access-esm1.6-configs",
+      "configs": {
+        "dev-preindustrial+concentrations": {
+          "checks": {
+            "repro": true
+          }
+        },
+        "dev-4xCO2+concentrations": {
+          "checks": {
+            "repro": true
+          }
+        },
+        "dev-1pctCO2": {
+          "checks": {
+            "repro": true
+          }
+        },
+        "dev-historical+concentrations": {
+          "checks": {
+            "repro": true
+          }
+        }
+      }
+    }
+
+  }
+}
