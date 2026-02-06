@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/deployment/config/packages/1-0-0.json",
+  "provenance": [
+    "cice5",
+    "um7",
+    "mom5",
+    "oasis3-mct",
+    "cable",
+    "gcom4",
+    "access-fms",
+    "access-generic-tracers",
+    "access-mocsy"
+  ],
+  "injection": [
+  ]
+}

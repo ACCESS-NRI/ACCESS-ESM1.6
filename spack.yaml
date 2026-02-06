@@ -6,17 +6,20 @@
 # Build with:
 # - UM7 from dev-access-esm1.6 branch
 # - MOM5 from master branch with access-generic-tracers (wombatlite) as a library
-# - CICE5 from ESM1.6 branch
+# - CICE5
 spack:
   specs:
-    - access-esm1p6@git.2025.12.000 cice=5
+    - access-esm1p6@git.2026.01.000 cice=5
   packages:
-    mom5:
+    # Coupler
+    oasis3-mct:
       require:
-        - '@git.2025.05.000=access-esm1.6'
+        - '@5.2'
+    # Major components
     cice5:
       require:
-        - '@git.access-esm1.6-2025.11.001=access-esm1.6'
+        - '@2026.01.000'
+        - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
         - '@git.fa379d58a281e05830b9a26bc1407f630cc3db4d=access-esm1.6'
@@ -24,12 +27,25 @@ spack:
       require:
         - '@2025.11.000'
         - library=access-esm1.6
+    mom5:
+      require:
+        - '@git.2025.05.000=access-esm1.6'
+    # Model dependencies
+    # MOM5
+    access-fms:
+      require:
+        - '@git.mom5-2025.08.000=mom5'
+    access-generic-tracers:
+      require:
+        - '@2025.09.000'
+    access-mocsy:
+      require:
+        - '@2025.07.002'
+    # UM7
     gcom4:
       require:
         - '@git.2025.08.000=access-esm1.5'
-    oasis3-mct:
-      require:
-        - '@git.2025.03.001'
+    # Shared dependencies
     openmpi:
       require:
         - '@5.0.8'
@@ -42,15 +58,7 @@ spack:
     hdf5:
       require:
         - '@1.14.3'
-    access-fms:
-      require:
-        - '@git.mom5-2025.08.000=mom5'
-    access-generic-tracers:
-      require:
-        - '@2025.09.000'
-    access-mocsy:
-      require:
-        - '@2025.07.002'
+    # System dependencies
     gcc-runtime:
       require:
         - '%gcc'
@@ -85,4 +93,4 @@ spack:
       root: $spack/../restricted/ukmo/release
     source_cache: $spack/../restricted/ukmo/source_cache
     build_stage:
-    - $TMPDIR/restricted/spack-stage
+      - $TMPDIR/restricted/spack-stage
