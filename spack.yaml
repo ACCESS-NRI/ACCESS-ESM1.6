@@ -9,7 +9,11 @@
 # - CICE5
 spack:
   specs:
+<<<<<<< HEAD
     - access-esm1p6@git.2026.01.000 cice=5
+=======
+    - access-esm1p6@git.2025.11.000 cice=5
+>>>>>>> ee6d550 (inc)
   packages:
     # Coupler
     oasis3-mct:
@@ -75,6 +79,22 @@ spack:
   view: true
   concretizer:
     unify: true
+<<<<<<< HEAD
+=======
+  modules:
+    default:
+      tcl:
+        include:
+          - access-esm1p6
+          - cice5
+          - um7
+          - mom5
+        projections:
+          access-esm1p6: '{name}/2025.11.000'
+          cice5: '{name}/access-esm1.6-2025.09.000-{hash:7}'
+          um7: '{name}/8f2bd9cbe0c5c0b28a5d7f4133fb66ec3eae4d02-{hash:7}'
+          mom5: '{name}/2025.05.000-{hash:7}'
+>>>>>>> ee6d550 (inc)
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
