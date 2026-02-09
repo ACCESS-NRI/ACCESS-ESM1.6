@@ -19,7 +19,7 @@ spack:
     cice5:
       require:
         - '@2026.01.000'
-        - 'nxglob=360 nyglob=300 blckx=18 blcky=300 mxblcks=1' # grid size and block size
+        # - 'nxglob=360 nyglob=300 blckx=18 blcky=300 mxblcks=1' # grid size and block size
         - 'nxglob=360 nyglob=300 blckx=30 blcky=150 mxblcks=2' # grid size and block size
     um7:
       require:
