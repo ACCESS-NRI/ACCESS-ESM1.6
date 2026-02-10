@@ -9,7 +9,8 @@
 # - CICE5
 spack:
   specs:
-    - access-esm1p6@git.2026.01.000 cice=5
+    - access-esm1p6 cice=5 ^cice5 blckx=18 blcky=300
+    - access-esm1p6 cice=5 ^cice5 blckx=30 blcky=150
   packages:
     # Coupler
     oasis3-mct:
@@ -19,8 +20,7 @@ spack:
     cice5:
       require:
         - '@2026.01.000'
-        # - 'nxglob=360 nyglob=300 blckx=18 blcky=300 mxblcks=1' # grid size and block size
-        - 'nxglob=360 nyglob=300 blckx=30 blcky=150 mxblcks=2' # grid size and block size
+        - 'nxglob=360 nyglob=300 mxblcks=1' # grid size and block size
     um7:
       require:
         - '@git.2025.12.000=access-esm1.6'
@@ -73,9 +73,14 @@ spack:
       require:
         - '%oneapi@2025.2.0'
         - 'target=x86_64_v4'
-  view: true
+  view: false
   concretizer:
-    unify: true
+    unify: false
+  modules:
+    default:
+      tcl:
+        projections:
+          access-esm1p6: '{name}/{^cice5.variants.blckx.value}x{^cice5.variants.blcky.value}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
