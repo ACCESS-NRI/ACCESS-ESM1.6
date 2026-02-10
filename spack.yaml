@@ -9,7 +9,7 @@
 # - CICE5
 spack:
   specs:
-    - access-esm1p6 cice=5 ^cice5 blckx=18 blcky=300
+    - access-esm1p6@git.main cice=5 ^cice5 blckx=18 blcky=300
     - access-esm1p6 cice=5 ^cice5 blckx=30 blcky=150
   packages:
     # Coupler
