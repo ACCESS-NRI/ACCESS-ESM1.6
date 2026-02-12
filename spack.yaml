@@ -62,24 +62,21 @@ spack:
     hdf5:
       require:
       - '@1.14.3'
-    # System dependencies
-    gcc-runtime:
-      require:
-      - '%access_gcc'
-    glibc:
-      require:
-      - '@2.28'
-      - '%access_gcc'
 
     # Compilers
-    intel-oneapi-compilers:
+    c:
       require:
-      - '@2025.2.0'
+      - 'intel-oneapi-compilers@2025.2.0'
+    cxx:
+      require:
+      - 'intel-oneapi-compilers@2025.2.0'
+    fortran:
+      require:
+      - 'intel-oneapi-compilers@2025.2.0'
 
     # Preferences for all packages
     all:
-      require:
-      - '%access_oneapi'
+      prefer:
       - 'target=x86_64_v4'
   view: true
   concretizer:
