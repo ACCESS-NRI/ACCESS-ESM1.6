@@ -8,76 +8,76 @@
 # - MOM5 from master branch with access-generic-tracers (wombatlite) as a library
 # - CICE5
 spack:
+  definitions:
+  # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
+  - _name: [access-esm1p6]
+  - _version: [2026.02.000]
   specs:
-    - access-esm1p6@git.2026.02.000 cice=5
+  - access-esm1p6 cice=5
   packages:
     # Coupler
     oasis3-mct:
       require:
-        - '@5.2'
+      - '@5.2'
     # Major components
     cice5:
       require:
-        - '@2026.01.000'
-        - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
+      - '@2026.01.000'
+      - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-        - '@git.2026.02.000=access-esm1.6'
+      - '@git.2026.02.000=access-esm1.6'
     cable:
       require:
-        - '@2025.11.000'
-        - library=access-esm1.6
+      - '@2025.11.000'
+      - library=access-esm1.6
     mom5:
       require:
-        - '@git.2025.05.000=access-esm1.6'
+      - '@git.2025.05.000=access-esm1.6'
     # Model dependencies
     # MOM5
     access-fms:
       require:
-        - '@git.mom5-2025.08.000=mom5'
+      - '@git.mom5-2025.08.000=mom5'
     access-generic-tracers:
       require:
-        - '@2025.09.000'
+      - '@2025.09.000'
     access-mocsy:
       require:
-        - '@2025.07.002'
+      - '@2025.07.002'
     # UM7
     gcom4:
       require:
-        - '@git.2025.08.000=access-esm1.5'
+      - '@git.2025.08.000=access-esm1.5'
     # Shared dependencies
     openmpi:
       require:
-        - '@5.0.8'
+      - '@5.0.8'
     netcdf-c:
       require:
-        - '@4.9.2'
+      - '@4.9.2'
     netcdf-fortran:
       require:
-        - '@4.6.1'
+      - '@4.6.1'
     hdf5:
       require:
-        - '@1.14.3'
-    # System dependencies
-    gcc-runtime:
+      - '@1.14.3'
+
+    # Compilers
+    c:
       require:
-        - '%gcc'
-    glibc:
+      - 'intel-oneapi-compilers@2025.2.0'
+    cxx:
       require:
-        - '@2.28'
-        - '%gcc'
+      - 'intel-oneapi-compilers@2025.2.0'
+    fortran:
+      require:
+      - 'intel-oneapi-compilers@2025.2.0'
 
     # Preferences for all packages
     all:
-      require:
-        - '%oneapi@2025.2.0'
-        - 'target=x86_64_v4'
+      prefer:
+      - 'target=x86_64_v4'
   view: true
   concretizer:
     unify: true
-  config:
-    install_tree:
-      root: $spack/../restricted/ukmo/release
-    source_cache: $spack/../restricted/ukmo/source_cache
-    build_stage:
-      - $TMPDIR/restricted/spack-stage
