@@ -18,7 +18,10 @@ spack:
     # Coupler
     oasis3-mct:
       require:
-      - '@git.2025.03.001' 
+      - '@5.2'
+      - 'fflags="-mavx2 -debug all -g3 -grecord-gcc-switches"'
+      - 'cflags="-mavx2 -debug all -g3 -grecord-gcc-switches"'
+      - 'cxxflags="-mavx2 -debug all -g3 -grecord-gcc-switches"'
     # Major components
     cice5:
       require:
