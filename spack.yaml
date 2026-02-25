@@ -44,7 +44,7 @@ spack:
     # UM7
     gcom4:
       require:
-        - '@git.2025.08.000=access-esm1.5'
+        - '@git.441f3a80332042e276e4437bb01f0ea1b9fa25d5=access-esm1.5'  # On branch 'mavx2'
     # Shared dependencies
     openmpi:
       require:
