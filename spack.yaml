@@ -29,7 +29,7 @@ spack:
         - library=access-esm1.6
     mom5:
       require:
-        - '@git.fd4e09d8bf26da98cf011624890e136c6e23b705=access-esm1.6'  # On branch 'dkhutch-nesi'
+        - '@git.3a6232e6b42ee1a42558e8262bbaf98e6cec9489=access-esm1.6'  # On branch 'dkhutch-nesi'
     # Model dependencies
     # MOM5
     access-fms:
