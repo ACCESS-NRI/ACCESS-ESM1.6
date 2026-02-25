@@ -80,7 +80,7 @@ spack:
     # Preferences for all packages
     all:
       prefer:
-      - 'target=x86_64_v2'
+      - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: true
