@@ -19,9 +19,9 @@ spack:
     oasis3-mct:
       require:
       - '@5.2'
-      - 'fflags="-mavx2 -debug all -g3 -grecord-gcc-switches"'
-      - 'cflags="-mavx2 -debug all -g3 -grecord-gcc-switches"'
-      - 'cxxflags="-mavx2 -debug all -g3 -grecord-gcc-switches"'
+      - 'fflags="-march=x86_64_v2 -debug all -g3 -grecord-gcc-switches"'
+      - 'cflags="-march=x86_64_v2 -debug all -g3 -grecord-gcc-switches"'
+      - 'cxxflags="-march=x86_64_v2 -debug all -g3 -grecord-gcc-switches"'
     # Major components
     cice5:
       require:
@@ -80,7 +80,7 @@ spack:
     # Preferences for all packages
     all:
       prefer:
-      - 'target=x86_64_v3'
+      - 'target=x86_64_v4'
   view: true
   concretizer:
     unify: true
