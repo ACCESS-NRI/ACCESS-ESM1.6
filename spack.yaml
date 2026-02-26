@@ -19,7 +19,7 @@ spack:
     oasis3-mct:
       require:
       - '@5.2'
-      - 'target=x86_64_v2'
+      - 'target=x86_64_v2'   
     # Major components
     cice5:
       require:
