@@ -19,9 +19,7 @@ spack:
     oasis3-mct:
       require:
       - '@5.2'
-      - 'fflags="-march=x86_64_v2 -debug all -g3 -grecord-gcc-switches"'
-      - 'cflags="-march=x86_64_v2 -debug all -g3 -grecord-gcc-switches"'
-      - 'cxxflags="-march=x86_64_v2 -debug all -g3 -grecord-gcc-switches"'
+      - 'target=x86_64_v2'
     # Major components
     cice5:
       require:
