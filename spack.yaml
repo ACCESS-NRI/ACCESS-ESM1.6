@@ -71,10 +71,13 @@ spack:
     all:
       require:
         - '%oneapi@2025.2.0'
-        - 'target=x86_64_v4'
+        - 'target=sapphirerapids'
   view: true
   concretizer:
     unify: true
+  targets:
+      granularity: microarchitectures
+      host_compatible: false
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
