@@ -63,9 +63,9 @@ spack:
     access-mocsy:
       require:
         - '@git.d4475dea14e9f6cf795f59f3f0cd200111ed8d0f=2025.07.002'  # On branch 'dkhutch-nesi'
-        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
-        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
-        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'fflags="-O2 -march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-O2 -march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-O2 -march=sapphirerapids -mtune=sapphirerapids"'
 
     # UM7
     gcom4:
