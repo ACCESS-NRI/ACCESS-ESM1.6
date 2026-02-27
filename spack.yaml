@@ -15,36 +15,66 @@ spack:
     oasis3-mct:
       require:
         - '@5.2'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
     # Major components
     cice5:
       require:
         - '@git.b7b6cff7f60339d8d2fe07cc78d648bb2a9c5b67=2026.01.000'  # On branch 'mavx2'
         - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
     um7:
       require:
         - '@git.2026.02.000=access-esm1.6'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
     cable:
       require:
         - '@2025.11.000'
         - library=access-esm1.6
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
     mom5:
       require:
         - '@git.3a6232e6b42ee1a42558e8262bbaf98e6cec9489=access-esm1.6'  # On branch 'dkhutch-nesi'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
     # Model dependencies
     # MOM5
     access-fms:
       require:
         - '@git.a5259453a6df8d8df1ee934a52e40b6f51735c6b=mom5'  # On branch 'dkhutch-nesi'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
     access-generic-tracers:
       require:
         - '@git.8fe85c866a8c7a6db41baf7c2412cf50e1e77f95=2025.09.000'  # On branch '2025.09.000-backport-mavx2'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
+
     access-mocsy:
       require:
         - '@git.d4475dea14e9f6cf795f59f3f0cd200111ed8d0f=2025.07.002'  # On branch 'dkhutch-nesi'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
+
     # UM7
     gcom4:
       require:
         - '@git.441f3a80332042e276e4437bb01f0ea1b9fa25d5=access-esm1.5'  # On branch 'mavx2'
+        - 'fflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cflags="-march=sapphirerapids -mtune=sapphirerapids"'
+        - 'cxxflags="-march=sapphirerapids -mtune=sapphirerapids"'
+
     # Shared dependencies
     openmpi:
       require:
