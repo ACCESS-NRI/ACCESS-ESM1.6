@@ -19,7 +19,6 @@ spack:
     oasis3-mct:
       require:
       - '@5.2'
-      - 'target=x86_64_v2'   
     # Major components
     cice5:
       require:
@@ -51,6 +50,14 @@ spack:
       require:
       - '@git.2025.08.000=access-esm1.5'
     # Shared dependencies
+    intel-oneapi-runtime:
+      require:
+      - '@2025.2.0'
+      - 'target=x86_64'
+    gcc-runtime:
+      require:
+      - '@15.1.0'
+      - 'target=x86_64'
     openmpi:
       require:
       - '@5.0.8'
