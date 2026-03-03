@@ -19,6 +19,7 @@ spack:
     oasis3-mct:
       require:
       - '@5.2'
+      - 'target=x86_64_v2'
     # Major components
     cice5:
       require:
@@ -26,7 +27,7 @@ spack:
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@git.2026.02.000=access-esm1.6'
+      - '@git.2025.12.000=access-esm1.6'
     cable:
       require:
       - '@2025.11.000'
@@ -50,14 +51,6 @@ spack:
       require:
       - '@git.2025.08.000=access-esm1.5'
     # Shared dependencies
-    intel-oneapi-runtime:
-      require:
-      - '@2025.2.0'
-      - 'target=x86_64'
-    gcc-runtime:
-      require:
-      - '@15.1.0'
-      - 'target=x86_64'
     openmpi:
       require:
       - '@5.0.8'
@@ -88,4 +81,4 @@ spack:
       - 'target=x86_64_v4'
   view: true
   concretizer:
-    unify: true
+    unify: false
