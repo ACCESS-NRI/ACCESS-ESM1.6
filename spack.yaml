@@ -88,23 +88,14 @@ spack:
     netcdf-c:
       require:
       - '@4.9.2'
-      - 'fflags="-O2 -xsapphirerapids"'
-      - 'cflags="-O2 -xsapphirerapids"'
-      - 'cxxflags="-O2 -xsapphirerapids"'
 
     netcdf-fortran:
       require:
       - '@4.6.1'
-      - 'fflags="-O2 -xsapphirerapids"'
-      - 'cflags="-O2 -xsapphirerapids"'
-      - 'cxxflags="-O2 -xsapphirerapids"'
 
     hdf5:
       require:
       - '@1.14.3'
-      - 'fflags="-O2 -xsapphirerapids"'
-      - 'cflags="-O2 -xsapphirerapids"'
-      - 'cxxflags="-O2 -xsapphirerapids"'
 
     # Compilers
     c:
