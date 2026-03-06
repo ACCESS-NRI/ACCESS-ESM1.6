@@ -19,40 +19,68 @@ spack:
     oasis3-mct:
       require:
       - '@5.2'
-      - 'target=x86_64_v2'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
     # Major components
     cice5:
       require:
       - '@2026.01.000'
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
     um7:
       require:
       - '@git.d309438079d365094eaea25eb0e7041724f8b2da=access-esm1.6'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
     cable:
       require:
       - '@2025.11.000'
       - library=access-esm1.6
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     mom5:
       require:
       - '@git.2025.05.000=access-esm1.6'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     # Model dependencies
     # MOM5
     access-fms:
       require:
       - '@git.mom5-2025.08.000=mom5'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     access-generic-tracers:
       require:
       - '@2025.09.000'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     access-mocsy:
       require:
       - '@2025.07.002'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     # UM7
     gcom4:
       require:
       - '@git.2025.08.000=access-esm1.5'
-      - 'fflags="-O2"'
-      - 'cflags="-O2"'
-      - 'cxxflags="-O2"'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
     # Shared dependencies
     openmpi:
       require:
@@ -60,12 +88,23 @@ spack:
     netcdf-c:
       require:
       - '@4.9.2'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     netcdf-fortran:
       require:
       - '@4.6.1'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
+
     hdf5:
       require:
       - '@1.14.3'
+      - 'fflags="-O2 -xsapphirerapids"'
+      - 'cflags="-O2 -xsapphirerapids"'
+      - 'cxxflags="-O2 -xsapphirerapids"'
 
     # Compilers
     c:
