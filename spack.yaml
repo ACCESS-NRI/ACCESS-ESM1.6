@@ -50,6 +50,9 @@ spack:
     gcom4:
       require:
       - '@git.2025.08.000=access-esm1.5'
+      - 'fflags="-O2"'
+      - 'cflags="-O2"'
+      - 'cxxflags="-O2"'
     # Shared dependencies
     openmpi:
       require:
