@@ -23,11 +23,11 @@ spack:
     # Major components
     cice5:
       require:
-      - '@2026.01.000'
+      - '@git.eafc41266adcc26fe676360910949496b6ff00c6'
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@git.49ca3acb113a723c70b7ab933059b70b05d826e0=access-esm1.6'
+      - '@git.2026.02.000=access-esm1.6' 
     cable:
       require:
       - '@2025.11.000'
