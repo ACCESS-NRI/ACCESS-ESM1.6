@@ -11,7 +11,7 @@ spack:
   definitions:
   # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
   - _name: [access-esm1p6]
-  - _version: [2026.02.001]
+  - _version: [2026.04.000]
   specs:
   - access-esm1p6 cice=5
   packages:
@@ -27,7 +27,7 @@ spack:
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@git.2026.02.000=access-esm1.6'
+      - '@git.2026.04.000=access-esm1.6'
     cable:
       require:
       - '@2025.11.000'
