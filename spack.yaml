@@ -13,7 +13,13 @@ spack:
   - _name: [access-esm1p6]
   - _version: [2026.04.000]
   specs:
-  - access-esm1p6 cice=5
+  - access-esm1p6 cice=5 ^cice5 blckx=30  # ncores = 12, released version
+  - access-esm1p6 cice=5 ^cice5 blckx=120 # ncores = 3
+  - access-esm1p6 cice=5 ^cice5 blckx=60  # ncores = 6
+  - access-esm1p6 cice=5 ^cice5 blckx=40  # ncores = 9
+  - access-esm1p6 cice=5 ^cice5 blckx=24  # ncores = 15
+  - access-esm1p6 cice=5 ^cice5 blckx=20  # ncores = 18
+  - access-esm1p6 cice=5 ^cice5 blckx=15  # ncores = 24
   packages:
     # Coupler
     oasis3-mct:
@@ -24,7 +30,7 @@ spack:
     cice5:
       require:
       - '@2026.01.000'
-      - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
+      - 'nxglob=360 nyglob=300 blcky=300 mxblcks=1 build_system=cmake' # grid size and block size
     um7:
       require:
       - '@git.2026.04.000=access-esm1.6'
@@ -79,6 +85,12 @@ spack:
     all:
       prefer:
       - 'target=x86_64_v4'
-  view: true
+  view: false
   concretizer:
-    unify: true
+    unify: false
+
+  modules:
+    default:
+      tcl:
+        projections:
+          access-esm1p6: '{name}/{version}-cice_blckx_{^cice5.variants.blckx.value}'
