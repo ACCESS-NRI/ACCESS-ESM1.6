@@ -58,6 +58,14 @@ spack:
       - '@2025.08.000'
     # Shared dependencies
     openmpi:
+      externals:
+      - spec: openmpi@5.0.8 %gcc@15.1.0
+        prefix: /apps/openmpi/5.0.8
+        modules: [openmpi/5.0.8]
+        extra_attributes:
+          environment:
+            prepend_path:
+              CMAKE_PREFIX_PATH: /apps/openmpi/5.0.8/include/GNU
       require:
       - '@5.0.8'
     netcdf-c:
@@ -73,13 +81,13 @@ spack:
     # Compilers
     c:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
     cxx:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
     fortran:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
 
     # Preferences for all packages
     all:
@@ -91,5 +99,5 @@ spack:
   repos:
     access_spack_packages:
       git: https://github.com/ACCESS-NRI/access-spack-packages.git
-      tag: 2026.08.004
-      destination: $env/.package_repos/access-spack-packages
+      commit: b5241a9bd9200e09ce698ee49eb3068913d87902
+      destination: $env/access-spack-packages
