@@ -92,10 +92,4 @@ spack:
     access_spack_packages:
       git: https://github.com/ACCESS-NRI/access-spack-packages.git
       tag: 2026.02.002
-      # or branch:, or commit:..
-      destination: $env/package_repos/access-spack-packages
-    builtin:
-      git: https://github.com/ACCESS-NRI/upstream-spack-packages.git
-      branch: access/v1.1
-      # Or commit:, or branch:
-      destination: $env/package_repos/spack-packages
+      destination: $env/.package_repos/access-spack-packages
