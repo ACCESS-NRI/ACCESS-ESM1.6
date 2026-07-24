@@ -49,9 +49,17 @@ spack:
     # UM7
     gcom4:
       require:
-      - '@git.2025.08.000=access-esm1.5'
+      - '@git.96fc06ecbaaabefa754b3f43697799ba0748cf7a=access-esm1.5'
     # Shared dependencies
     openmpi:
+      externals:
+      - spec: openmpi@5.0.8 %gcc@15.1.0
+        prefix: /apps/openmpi/5.0.8
+        modules: [openmpi/5.0.8]
+        extra_attributes:
+          environment:
+            prepend_path:
+              CMAKE_PREFIX_PATH: /apps/openmpi/5.0.8/include/GNU
       require:
       - '@5.0.8'
     netcdf-c:
@@ -67,13 +75,13 @@ spack:
     # Compilers
     c:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
     cxx:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
     fortran:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
 
     # Preferences for all packages
     all:
