@@ -27,10 +27,10 @@ spack:
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@git.2026.04.000=access-esm1.6'
+      - '@git.6ed05ba59f43e927441e87d6025ec71423803b31=access-esm1.6'
     cable:
       require:
-      - '@2025.11.000'
+      - '@1701acb7c5dacb88df22d42a7f61d283cb285764'
       - library=access-esm1.6
     mom5:
       require:
