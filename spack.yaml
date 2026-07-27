@@ -12,6 +12,12 @@ spack:
   # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
   - _name: [access-esm1p6]
   - _version: [2026.04.001]
+  # _spack-version and _custom-scopes inform the branch of spack to use, and custom scopes if applicable, respectively
+  - _spack-version: ["1.1"]
+  - _custom-scopes: ["ukmo-restricted-scope"]
+  # Release database provenance information - packages for inclusion into the database, and packages just for injection into the modules
+  - _provenance: ["cice5", "um7", "mom5", "oasis3-mct", "cable", "gcom4", "access-fms", "access-generic-tracers", "access-mocsy"]
+  - _injection: []
   specs:
   - access-esm1p6
   packages:
@@ -82,3 +88,8 @@ spack:
   view: true
   concretizer:
     unify: true
+  repos:
+    access_spack_packages:
+      git: https://github.com/ACCESS-NRI/access-spack-packages.git
+      tag: 2026.08.004
+      destination: $env/.package_repos/access-spack-packages
