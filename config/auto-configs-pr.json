@@ -5,28 +5,32 @@
     "default": {
       "configs_repo": "ACCESS-NRI/access-esm1.6-configs",
       "configs": {
-        "dev-preindustrial+concentrations": {
+        "dev-piControl": {
           "checks": {
             "repro": true
           }
         },
-        "dev-4xCO2+concentrations": {
+        "dev-esm-piControl": {
           "checks": {
             "repro": true
           }
         },
-        "dev-1pctCO2": {
+        "dev-historical": {
           "checks": {
             "repro": true
           }
         },
-        "dev-historical+concentrations": {
+        "dev-esm-historical": {
           "checks": {
             "repro": true
           }
-        }
+        },
+        "dev-amip": {
+          "checks": {
+            "repro": true
+          }
+        },
       }
     }
-
   }
 }
