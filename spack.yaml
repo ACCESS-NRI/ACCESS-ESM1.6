@@ -34,7 +34,7 @@ spack:
       - library=access-esm1.6
     mom5:
       require:
-      - '@git.2025.05.000=access-esm1.6'
+      - '@git.2025.02.001=access-esm1.6'
     # Model dependencies
     # MOM5
     access-fms:
