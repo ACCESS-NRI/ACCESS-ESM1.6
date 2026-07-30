@@ -33,10 +33,11 @@ spack:
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@2026.04.001'
+        # https://github.com/ACCESS-NRI/UM7/commits/gfortran-fixes/
+      - '@git.4061195eff5df223072c71fe224aaa5b2898dc5a=stable'
     cable:
       require:
-      - '@2025.11.000'
+      - '@git.1701acb7c5dacb88df22d42a7f61d283cb285764=stable'
       - library=access-esm1.6
     mom5:
       require:
@@ -55,7 +56,8 @@ spack:
     # UM7
     gcom4:
       require:
-      - '@2025.08.000'
+        # https://github.com/ACCESS-NRI/GCOM4/commits/add-gfortran/
+      - '@git.96fc06ecbaaabefa754b3f43697799ba0748cf7a=stable'
     # Shared dependencies
     openmpi:
       externals:
