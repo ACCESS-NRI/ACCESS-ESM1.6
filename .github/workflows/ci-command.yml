@@ -8,7 +8,7 @@ jobs:
   redeploy:
     name: Redeploy
     if: startsWith(github.event.comment.body, '!redeploy') && github.event.issue.pull_request
-    uses: access-nri/build-cd/.github/workflows/ci.yml@v9
+    uses: access-nri/build-cd/.github/workflows/ci.yml@404-merge-config-into-manifest
     with:
       model: ${{ vars.NAME }}
       spack-manifest-schema-version: 3-0-0
@@ -20,7 +20,7 @@ jobs:
   bump:
     name: Bump
     if: startsWith(github.event.comment.body, '!bump') && github.event.issue.pull_request
-    uses: access-nri/build-cd/.github/workflows/ci-comment.yml@v9
+    uses: access-nri/build-cd/.github/workflows/ci-comment.yml@404-merge-config-into-manifest
     with:
       model: ${{ vars.NAME }}
     permissions:
@@ -30,7 +30,7 @@ jobs:
   configs:
     name: Configs
     if: startsWith(github.event.comment.body, '!update-configs') && github.event.issue.pull_request
-    uses: access-nri/build-cd/.github/workflows/ci-command-configs.yml@v9
+    uses: access-nri/build-cd/.github/workflows/ci-command-configs.yml@404-merge-config-into-manifest
     with:
       auto-configs-pr-schema-version: 1-0-0
     permissions:

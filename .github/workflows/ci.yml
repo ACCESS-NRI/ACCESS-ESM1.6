@@ -19,7 +19,7 @@ jobs:
   pr-ci:
     name: CI
     if: github.event.action != 'closed'
-    uses: access-nri/build-cd/.github/workflows/ci.yml@v9
+    uses: access-nri/build-cd/.github/workflows/ci.yml@404-merge-config-into-manifest
     with:
       model: ${{ vars.NAME }}
       spack-manifest-schema-version: 3-0-0
@@ -31,5 +31,5 @@ jobs:
   pr-closed:
     name: Closed
     if: github.event.action == 'closed'
-    uses: access-nri/build-cd/.github/workflows/ci-closed.yml@v9
+    uses: access-nri/build-cd/.github/workflows/ci-closed.yml@404-merge-config-into-manifest
     secrets: inherit

@@ -9,7 +9,7 @@ on:
 jobs:
   cd:
     name: CD
-    uses: access-nri/build-cd/.github/workflows/cd.yml@v9
+    uses: access-nri/build-cd/.github/workflows/cd.yml@404-merge-config-into-manifest
     with:
       model: ${{ vars.NAME }}
       spack-manifest-schema-version: 3-0-0
