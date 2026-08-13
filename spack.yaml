@@ -41,7 +41,7 @@ spack:
       - library=access-esm1.6
     mom5:
       require:
-      - '@2025.05.000'
+      - '@15448f7cc52c02a9e3d716ff5e8d7379bcc1d5d9'
     # Model dependencies
     # MOM5
     access-fms:
