@@ -33,7 +33,7 @@ spack:
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@2026.04.001'
+      - '@2026.04.002'
     cable:
       require:
       - '@2025.11.000'
