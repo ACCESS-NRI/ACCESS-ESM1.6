@@ -11,7 +11,7 @@ spack:
   definitions:
   # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
   - _name: [access-esm1p6]
-  - _version: [2026.04.001]
+  - _version: [2026.04.002]
   # _spack-version and _custom-scopes inform the branch of spack to use, and custom scopes if applicable, respectively
   - _spack-version: ["1.1"]
   - _custom-scopes: ["ukmo-restricted-scope"]
@@ -33,19 +33,19 @@ spack:
       - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
     um7:
       require:
-      - '@2026.04.001'
+      - '@2026.04.002'
     cable:
       require:
       - '@2025.11.000'
       - library=access-esm1.6
     mom5:
       require:
-      - '@2025.05.000'
+      - '@2026.02.001'
     # Model dependencies
     # MOM5
     access-fms:
       require:
-      - '@2025.08.000'
+      - '@2025.08.001'
     access-generic-tracers:
       require:
       - '@2025.09.000'
@@ -91,5 +91,5 @@ spack:
   repos:
     access_spack_packages:
       git: https://github.com/ACCESS-NRI/access-spack-packages.git
-      tag: 2026.08.004
+      tag: 2026.08.009
       destination: $env/package-repos/access-spack-packages
