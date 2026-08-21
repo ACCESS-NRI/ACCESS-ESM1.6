@@ -40,12 +40,12 @@ spack:
       - library=access-esm1.6
     mom5:
       require:
-      - '@2026.02.001'
+      - '@git.fedb3fd6846c4ada3e608135734405c126779be3=2026.02.001'
     # Model dependencies
     # MOM5
     access-fms:
       require:
-      - '@2025.08.001'
+      - '@git.c907a3436957152e1768290a1185827432cfc669=2025.08.001'
     access-generic-tracers:
       require:
       - '@2025.09.000'
