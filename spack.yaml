@@ -29,8 +29,7 @@ spack:
     # Major components
     cice5:
       require:
-      - '@2026.07.000'
-      - 'nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1' # grid size and block size
+      - '@git.345d1fba9ab4b7c01aa556f310094c7831e931f3'
     um7:
       require:
       - '@2026.04.002'
