@@ -36,7 +36,7 @@ spack:
       - '@2026.04.002'
     cable:
       require:
-      - '@2025.11.000'
+      - '@2025.11.001'
       - library=access-esm1.6
     mom5:
       require:
@@ -55,9 +55,17 @@ spack:
     # UM7
     gcom4:
       require:
-      - '@2025.08.000'
+      - '@2026.08.000'
     # Shared dependencies
     openmpi:
+      externals:
+      - spec: openmpi@5.0.8 %gcc@15.1.0
+        prefix: /apps/openmpi/5.0.8
+        modules: [openmpi/5.0.8]
+        extra_attributes:
+          environment:
+            prepend_path:
+              CMAKE_PREFIX_PATH: /apps/openmpi/5.0.8/include/GNU
       require:
       - '@5.0.8'
     netcdf-c:
@@ -73,13 +81,13 @@ spack:
     # Compilers
     c:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
     cxx:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
     fortran:
       require:
-      - 'intel-oneapi-compilers@2025.2.0'
+      - 'gcc@15.1.0'
 
     # Preferences for all packages
     all:
@@ -91,5 +99,5 @@ spack:
   repos:
     access_spack_packages:
       git: https://github.com/ACCESS-NRI/access-spack-packages.git
-      tag: 2026.08.011
+      tag: 2026.09.000
       destination: $env/package-repos/access-spack-packages
