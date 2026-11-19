@@ -33,7 +33,7 @@ spack:
       - nxglob=360 nyglob=300 blckx=30 blcky=300 mxblcks=1   # grid size and block size
     um7:
       require:
-      - '@git.9ddd689e5f23f5fdefce3120d3c9ec1667be7971'
+      - '@git.078b9f569296548db69fc9b014c34d2fdae3b01e'
     cable:
       require:
       - '@2025.11.000'
